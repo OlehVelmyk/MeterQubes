@@ -1,0 +1,64 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Meter Qubes Back Stage Tests" verbose="1" parallel="none">
+    <test name="Users">
+        <packages>
+            <package name="com.scenario_projects.mq_back_stage.tests.users"/>
+        </packages>
+    </test>
+    <test name="Markets">
+        <packages>
+            <package name="com.scenario_projects.mq_back_stage.tests.markets"/>
+        </packages>
+    </test>
+    <test name="Data">
+        <packages>
+            <package name="com.scenario_projects.mq_back_stage.tests.data"/>
+        </packages>
+    </test>
+    <test name="Trade History">
+        <packages>
+            <package name="com.scenario_projects.mq_back_stage.tests.trade"/>
+        </packages>
+    </test>
+    <test name="Order Book">
+        <packages>
+            <package name="com.scenario_projects.mq_back_stage.tests.orderBook"/>
+        </packages>
+    </test>
+    <test name="Dashboard">
+        <packages>
+            <package name="com.scenario_projects.mq_back_stage.tests.dashboard"/>
+        </packages>
+    </test>
+    <test name="Favorites markets">
+        <packages>
+            <package name="com.scenario_projects.mq_back_stage.tests.favorites"/>
+        </packages>
+    </test>
+    <test name="Fees wallets">
+        <packages>
+            <package name="com.scenario_projects.mq_back_stage.tests.ethereum"/>
+        </packages>
+    </test>
+    <test name="Admin panel">
+        <packages>
+            <package name="com.scenario_projects.mq_back_stage.tests.admin"/>
+        </packages>
+    </test>
+    <test name="Admin Bot">
+        <packages>
+            <package name="com.scenario_projects.mq_back_stage.tests.adminBot"/>
+        </packages>
+    </test>
+     <test name="Orders">
+         <packages>
+             <package name="com.scenario_projects.mq_back_stage.tests.orders"/>
+         </packages>
+     </test>
+     <test name="Exchange">
+         <packages>
+             <package name="com.scenario_projects.mq_back_stage.tests.exchange"/>
+         </packages>
+     </test>
+</suite>
