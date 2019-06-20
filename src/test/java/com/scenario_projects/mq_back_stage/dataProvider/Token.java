@@ -12,6 +12,7 @@ public class Token {
     }
 
     public static String getToken() {
+        System.out.println("Token = " + token);
         return token;
     }
 

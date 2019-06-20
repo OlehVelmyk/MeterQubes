@@ -29,7 +29,6 @@ public class N_0029_CreateExchangeOrderWrapToTokenTest {
 
     @Test
     public void createExchangeOrder() {
-
         JSONObject requestParams = new JSONObject()
                 .put("giveTokenId", 1)
                 .put("giveAmount", "0.005")

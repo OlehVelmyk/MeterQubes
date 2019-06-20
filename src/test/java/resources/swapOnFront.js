@@ -213,8 +213,8 @@ web3.eth.getTransactionCount(relayer)
     .then(txData => {
         console.time('ready to send')
         sendSigned(txData, (err, result) => {
-            if (err) return console.error('Got transaction hash: ', err)
-            console.log('Tx sent! Got recipe: ', result)
+            if (err) return console.error('Got recipe: ', err)
+            console.log('Tx sent! Got transaction hash: ', result)
             fs.writeFileSync('src/test/java/resources/transactionHash.txt', result);
         })
         console.timeEnd('ready to send')

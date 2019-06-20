@@ -28,12 +28,6 @@ public class N_0019_GetAdminTransactionListTest {
 
         JsonPath jsonPathEvaluator = response.jsonPath();
         GetParametersFromResponses getParametersFromResponses = new GetParametersFromResponses();
-        getParametersFromResponses.getUserWalletsResponse(jsonPathEvaluator, "totalPages");
         getParametersFromResponses.getUserWalletsResponse(jsonPathEvaluator, "transactions");
-
-        String page = jsonPathEvaluator.getString("page");
-        CustomReporter.logAction("'Page' parameter received from Response is " + page);
-        System.out.println("'Page' parameter received from Response is " + page);
-        Assert.assertEquals(Integer.parseInt(page), 1);
     }
 }

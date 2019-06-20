@@ -14,7 +14,8 @@ public class AuthorizationHelper {
     public void authorization() {
 
         RunJSFiles runFileJS = new RunJSFiles();
-        runFileJS.runJSfile("/home/ubuntu/.nvm/versions/node/v10.15.2/bin/node src/test/java/resources/calculateSignature.js");
+        //runFileJS.runJSfile("/home/ubuntu/.nvm/versions/node/v10.15.2/bin/node src/test/java/resources/calculateSignature.js");
+        runFileJS.runJSfile("src/test/java/resources/node src/test/java/resources/calculateSignature.js");
         //runFileJS.runJSfile("src\\test\\java\\resources\\node.exe src\\test\\java\\resources\\calculateSignature.js");
 
         JSONObject requestParams = new JSONObject()

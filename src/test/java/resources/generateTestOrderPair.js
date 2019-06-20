@@ -1,4 +1,3 @@
-
 process
     .on('unhandledRejection', (reason, p) => {
         console.error('Reason: ', reason);
@@ -81,7 +80,6 @@ const getOrderHash = (order) => {
     )
 };
 
-
 function getEIP712MessageHash(message) {
     return sha3ToHex('0x1901' + getDomainSeparator().slice(2) + message.slice(2), {
         encoding: 'hex'
@@ -143,6 +141,8 @@ const takerOrder = {
     salt: parseInt(crypto.randomBytes(6).toString('hex'), 16) // 8 bytes available in order.data, but JS handles only 53 bits (< 7 bytes)
 };
 
+console.log('takerOrder: ', takerOrder)
+fs.writeFileSync('/home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/resources/exchangeOrderData.json', JSON.stringify(takerOrder))
 
 const makerOrder = {
     version: 2, // uint256 public constant SUPPORTED_ORDER_VERSION = 2
