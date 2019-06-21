@@ -15,6 +15,7 @@
         <maven-project.version>2.2.1</maven-project.version>
         <maven-compiler-plugin.version>1.8</maven-compiler-plugin.version>
         <maven-surefire-plugin.version>3.0.0-M3</maven-surefire-plugin.version>
+        <build-helper-maven-plugin.version>3.0.0</build-helper-maven-plugin.version>
         <rest-assured.version>4.0.0</rest-assured.version>
         <json-path.version>4.0.0</json-path.version>
         <json-schema-validator.version>4.0.0</json-schema-validator.version>
@@ -22,9 +23,9 @@
         <gson>2.8.4</gson>
         <json>20180813</json>
 
-        <timestamp>${maven.build.timestamp}</timestamp>
+        <!--<timestamp>${maven.build.timestamp}</timestamp>
         <maven.build.timestamp.format>yyyy-MM-dd_HH-mm-ss</maven.build.timestamp.format>
-        <sureFireDir>${project.basedir}/${timestamp}/</sureFireDir>
+        <sureFireDir>${project.basedir}/${timestamp}/</sureFireDir>-->
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -119,6 +120,25 @@
                 </configuration>
             </plugin>
             <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>${build-helper-maven-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>timestamp-property</id>
+                        <goals>
+                            <goal>timestamp-property</goal>
+                        </goals>
+                        <configuration>
+                            <name>build.time</name>
+                            <pattern>yyyy-MM-dd_HH-mm-ss</pattern>
+                            <!--<locale>en_US</locale>-->
+                            <timeZone>Europe/Kiev</timeZone>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven-surefire-plugin.version}</version>
@@ -139,7 +159,7 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
-                    <reportsDirectory>${sureFireDir}</reportsDirectory>
+                    <reportsDirectory>${project.basedir}/${build.time}</reportsDirectory>
                 </configuration>
             </plugin>
         </plugins>

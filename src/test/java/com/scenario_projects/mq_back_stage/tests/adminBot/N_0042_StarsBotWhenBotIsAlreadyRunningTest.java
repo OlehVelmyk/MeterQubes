@@ -17,9 +17,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class N_0042_StarsBotWhenBotIsAlreadyRunningTest {
-    private double minPrice = 0.1;
-    private double maxPrice = 0.9;
-    private double priceGap = 0.1;
+    private double minPrice = 0.000000000006;
+    private double maxPrice = 0.00000000003;
+    private double priceGap = 0.000000000009;
     private int expendInventory = 1;
 
     @BeforeMethod

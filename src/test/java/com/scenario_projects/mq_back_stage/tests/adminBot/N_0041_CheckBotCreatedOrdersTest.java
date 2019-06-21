@@ -19,11 +19,11 @@ import org.testng.annotations.Test;
 import java.util.*;
 
 public class N_0041_CheckBotCreatedOrdersTest {
-    private double minPrice = 0.1;
-    private double maxPrice = 0.9;
-    private double priceGap = 0.1;
+    private double minPrice = 0.000000000006;
+    private double maxPrice = 0.00000000003;
+    private double priceGap = 0.000000000009;
     private int expendInventory = 1;
-    private double centerPrice = 0.5;
+    private double centerPrice = 0.00000000002;
 
     @BeforeMethod
     public void startBot() {
