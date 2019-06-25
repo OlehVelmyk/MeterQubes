@@ -41,8 +41,8 @@ public class N_0040_StartAndStopBotTest {
                     .header("Accept", "application/json")
                     .header("Authorization", Token.getAdminToken());
 
-            Response response1 = request.patch(AdminAndBotEndpoints.stopLiqudityBot(MarketId.marketId));
-            ResponseBody.GetResponseBodyAndStatusCode(response, 200);
+            Response responseWhenBotIsStarted = request.patch(AdminAndBotEndpoints.stopLiqudityBot(MarketId.marketId));
+            ResponseBody.GetResponseBodyAndStatusCode(responseWhenBotIsStarted, 204);
         }
 
         //Get center price
@@ -56,7 +56,6 @@ public class N_0040_StartAndStopBotTest {
 
     @Test
     public void startBot() {
-
         BotModel botModel = new BotModel(BotValues.getMinPrice(), BotValues.getMaxPrice(), BotValues.getPriceGap(), BotValues.getExpendInventory());
         JSONObject requestParams = new JSONObject()
                 .put("minPrice", BotModel.getMinPrice())
