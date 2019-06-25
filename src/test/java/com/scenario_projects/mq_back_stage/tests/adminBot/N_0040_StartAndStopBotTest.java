@@ -1,7 +1,10 @@
 package com.scenario_projects.mq_back_stage.tests.adminBot;
 
+import com.scenario_projects.mq_back_stage.actioHelpers.CalculateBotValues;
+import com.scenario_projects.mq_back_stage.actioHelpers.GetCenterPriceHelper;
 import com.scenario_projects.mq_back_stage.actioHelpers.GetParametersFromResponses;
 import com.scenario_projects.mq_back_stage.actioHelpers.ResponseBody;
+import com.scenario_projects.mq_back_stage.dataProvider.BotValues;
 import com.scenario_projects.mq_back_stage.dataProvider.MarketId;
 import com.scenario_projects.mq_back_stage.dataProvider.Token;
 import com.scenario_projects.mq_back_stage.endpoints.AdminAndBotEndpoints;
@@ -14,20 +17,47 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.json.JSONObject;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.Listeners;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 @Listeners({TestListener.class})
 public class N_0040_StartAndStopBotTest {
-    private double minPrice = 0.000000000006;
-    private double maxPrice = 0.00000000003;
-    private double priceGap = 0.000000000009;
-    private int expendInventory = 1;
+
+    @BeforeSuite
+    public void checkBotStatus() {
+        RequestSpecification request = RestAssured.given()
+                .header("Accept", "application/json")
+                .header("Authorization", Token.getAdminToken());
+
+        Response response = request.get(AdminAndBotEndpoints.getBotDataByMarketId(MarketId.marketId));
+        ResponseBody.GetResponseBodyAndStatusCode(response, 200);
+
+        JsonPath jsonPathEvaluator = response.jsonPath();
+        boolean status = jsonPathEvaluator.getBoolean("isRunning");
+        CustomReporter.logAction("'isRunning' parameter received from Response is " + status);
+        System.out.println("'isRunning' parameter received from Response is " + status);
+
+        if (status) {
+            RequestSpecification request1 = RestAssured.given()
+                    .header("Accept", "application/json")
+                    .header("Authorization", Token.getAdminToken());
+
+            Response response1 = request.patch(AdminAndBotEndpoints.stopLiqudityBot(MarketId.marketId));
+            ResponseBody.GetResponseBodyAndStatusCode(response, 200);
+        }
+
+        //Get center price
+        GetCenterPriceHelper getCenterPriceHelper = new GetCenterPriceHelper();
+        getCenterPriceHelper.getCenterPrice();
+
+        //Calculate max price, max price and price gap
+        CalculateBotValues calculateBotValues = new CalculateBotValues();
+        calculateBotValues.calculateBotValues();
+    }
 
     @Test
     public void startBot() {
-        BotModel botModel = new BotModel(minPrice, maxPrice, priceGap, expendInventory);
+
+        BotModel botModel = new BotModel(BotValues.getMinPrice(), BotValues.getMaxPrice(), BotValues.getPriceGap(), BotValues.getExpendInventory());
         JSONObject requestParams = new JSONObject()
                 .put("minPrice", BotModel.getMinPrice())
                 .put("maxPrice", BotModel.getMaxPrice())
@@ -81,7 +111,7 @@ public class N_0040_StartAndStopBotTest {
         ResponseBody.GetResponseBodyAndStatusCode(response, 204);
     }
 
-    @AfterMethod
+    @AfterSuite
     public void getBotDataAgain() {
         RequestSpecification request = RestAssured.given()
                 .header("Accept", "application/json")

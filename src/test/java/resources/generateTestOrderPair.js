@@ -142,7 +142,8 @@ const takerOrder = {
 };
 
 console.log('takerOrder: ', takerOrder)
-fs.writeFileSync('/home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/resources/exchangeOrderData.json', JSON.stringify(takerOrder))
+//fs.writeFileSync('/home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/resources/exchangeOrderData.json', JSON.stringify(takerOrder))
+fs.writeFileSync('src/test/java/resources/exchangeOrderData.json', JSON.stringify(takerOrder))
 
 const makerOrder = {
     version: 2, // uint256 public constant SUPPORTED_ORDER_VERSION = 2

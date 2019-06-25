@@ -6,6 +6,7 @@ public class AdminAndBotEndpoints extends BaseEndpoints {
     public static final String getAdminTransactionList = baseURL + "admin/transactions/list";
     public static final String getTradeFees = baseURL + "admin/fees";
     public static final String updateTradeFees = baseURL + "admin/fees/trade";
+    public static final String getCenterPrice = "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=EMPR&tsyms=ETH";
 
     public static String getBotDataByMarketId(int marketId) {
         return baseURL + "bots/" + marketId;

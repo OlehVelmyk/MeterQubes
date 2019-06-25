@@ -51,7 +51,7 @@ public class N_0029_CreateExchangeOrderWrapToTokenTest {
         exchangeOrderIdValue.setExchangeOrderID(exchangeOrderId);
 
         RunJSFiles runFileJS = new RunJSFiles();
-        runFileJS.runJSfile("/home/ubuntu/.nvm/versions/node/v10.15.2/bin/node src/test/java/resources/swapOnFront.js");
+        runFileJS.runJSfile("src/test/java/resources/node src/test/java/resources/swapOnFront.js");
     }
 
     @Test(dependsOnMethods = "createExchangeOrder")

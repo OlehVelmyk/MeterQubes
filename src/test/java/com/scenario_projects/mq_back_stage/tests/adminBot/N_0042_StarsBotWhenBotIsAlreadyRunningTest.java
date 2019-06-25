@@ -1,7 +1,10 @@
 package com.scenario_projects.mq_back_stage.tests.adminBot;
 
+import com.scenario_projects.mq_back_stage.actioHelpers.CalculateBotValues;
+import com.scenario_projects.mq_back_stage.actioHelpers.GetCenterPriceHelper;
 import com.scenario_projects.mq_back_stage.actioHelpers.GetParametersFromResponses;
 import com.scenario_projects.mq_back_stage.actioHelpers.ResponseBody;
+import com.scenario_projects.mq_back_stage.dataProvider.BotValues;
 import com.scenario_projects.mq_back_stage.dataProvider.MarketId;
 import com.scenario_projects.mq_back_stage.dataProvider.Token;
 import com.scenario_projects.mq_back_stage.endpoints.AdminAndBotEndpoints;
@@ -13,18 +16,23 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.json.JSONObject;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class N_0042_StarsBotWhenBotIsAlreadyRunningTest {
-    private double minPrice = 0.000000000006;
-    private double maxPrice = 0.00000000003;
-    private double priceGap = 0.000000000009;
-    private int expendInventory = 1;
 
-    @BeforeMethod
+    @BeforeTest
     public void startBot() {
-        BotModel botModel = new BotModel(minPrice, maxPrice, priceGap, expendInventory);
+        //Get center price
+        GetCenterPriceHelper getCenterPriceHelper = new GetCenterPriceHelper();
+        getCenterPriceHelper.getCenterPrice();
+
+        //Calculate max price, max price and price gap
+        CalculateBotValues calculateBotValues = new CalculateBotValues();
+        calculateBotValues.calculateBotValues();
+
+        BotModel botModel = new BotModel(BotValues.getMinPrice(), BotValues.getMaxPrice(), BotValues.getPriceGap(), BotValues.getExpendInventory());
         JSONObject requestParams = new JSONObject()
                 .put("minPrice", BotModel.getMinPrice())
                 .put("maxPrice", BotModel.getMaxPrice())
@@ -40,7 +48,7 @@ public class N_0042_StarsBotWhenBotIsAlreadyRunningTest {
         ResponseBody.GetResponseBodyAndStatusCode(response, 204);
     }
 
-    @BeforeMethod(dependsOnMethods = "startBot")
+    @BeforeTest(dependsOnMethods = "startBot")
     public void getBotData() {
         RequestSpecification request = RestAssured.given()
                 .header("Accept", "application/json")
@@ -61,7 +69,7 @@ public class N_0042_StarsBotWhenBotIsAlreadyRunningTest {
 
     @Test
     public void startBotAgain() {
-        BotModel botModel = new BotModel(0.1, 0.9, 0.1, 1);
+        BotModel botModel = new BotModel(BotValues.getMinPrice(), BotValues.getMaxPrice(), BotValues.getPriceGap(), BotValues.getExpendInventory());
         JSONObject requestParams = new JSONObject()
                 .put("minPrice", BotModel.getMinPrice())
                 .put("maxPrice", BotModel.getMaxPrice())
@@ -75,5 +83,15 @@ public class N_0042_StarsBotWhenBotIsAlreadyRunningTest {
 
         Response response = request.post(AdminAndBotEndpoints.startLiqudityBot(MarketId.marketId));
         ResponseBody.GetResponseBodyAndStatusCode(response, 500);
+    }
+
+    @AfterTest
+    public void stopBot() {
+        RequestSpecification request = RestAssured.given()
+                .header("Accept", "application/json")
+                .header("Authorization", Token.getAdminToken());
+
+        Response response = request.patch(AdminAndBotEndpoints.stopLiqudityBot(MarketId.marketId));
+        ResponseBody.GetResponseBodyAndStatusCode(response, 204);
     }
 }
