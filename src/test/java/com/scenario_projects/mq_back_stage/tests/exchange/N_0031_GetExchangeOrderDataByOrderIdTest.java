@@ -15,14 +15,17 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.json.JSONObject;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 @Listeners({TestListener.class})
 public class N_0031_GetExchangeOrderDataByOrderIdTest {
+    private int tokenId = 12;
+    private double tokenValue = 1;
+    private double wethValue;
 
-    @BeforeMethod
+    @BeforeClass
     public void findUserByPublicAddressAndAuthorization() {
         FindUserByPublicAddressHelper findUserByPublicAddressHelper = new FindUserByPublicAddressHelper();
         findUserByPublicAddressHelper.findUserByPublicAddress();
@@ -31,14 +34,38 @@ public class N_0031_GetExchangeOrderDataByOrderIdTest {
         authorizationHelper.authorization();
     }
 
-    @BeforeMethod(dependsOnMethods = "findUserByPublicAddressAndAuthorization")
-    public void createExchangeOrder() {
+    @BeforeClass(dependsOnMethods = "findUserByPublicAddressAndAuthorization")
+    public void getExchangeTokenDataByTokenId() {
+        RequestSpecification request = RestAssured.given()
+                .header("Accept", "application/json")
+                .header("Authorization", Token.getToken());
 
+        Response response = request.get(ExchangeEndpoints.getExchangeTokenDataByTokenId(tokenId));
+        ResponseBody.GetResponseBodyAndStatusCode(response, 200);
+
+        JsonPath jsonPathEvaluator = response.jsonPath();
+        int exchangeTokenId = jsonPathEvaluator.get("id");
+        CustomReporter.logAction("Token id from Response is " + "'" + exchangeTokenId + "'");
+        System.out.println("Token id from Response is " + "'" + exchangeTokenId + "'");
+        Assert.assertEquals(exchangeTokenId, tokenId);
+
+        double receivePriceToWETH = Double.parseDouble(jsonPathEvaluator.getString("currentPriceToWETH"));
+        CustomReporter.logAction("receivePriceToWETH from Response is " + "'" + receivePriceToWETH + "'");
+        System.out.println("receivePriceToWETH from Response is " + "'" + receivePriceToWETH + "'");
+        Assert.assertNotEquals(receivePriceToWETH, 0);
+
+        wethValue = receivePriceToWETH;
+    }
+
+    @BeforeClass(dependsOnMethods = "getExchangeTokenDataByTokenId")
+    public void createExchangeOrder() {
         JSONObject requestParams = new JSONObject()
                 .put("giveTokenId", 12)
-                .put("giveAmount", "0.012")
+                .put("giveAmount", String.valueOf(tokenValue))
                 .put("receiveTokenId", 1)
-                .put("receiveAmount", "0.006");
+                .put("receiveAmount", String.valueOf(tokenValue * wethValue));
+
+        System.out.println("tokenValue * wethValue = " + tokenValue * wethValue);
 
         RequestSpecification request = RestAssured.given()
                 .header("Content-Type", "application/json")

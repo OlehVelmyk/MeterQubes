@@ -6,6 +6,7 @@ import com.scenario_projects.mq_back_stage.dataProvider.MarketId;
 import com.scenario_projects.mq_back_stage.dataProvider.Token;
 import com.scenario_projects.mq_back_stage.endpoints.AdminAndBotEndpoints;
 import com.scenario_projects.mq_back_stage.logging.CustomReporter;
+import com.scenario_projects.mq_back_stage.logging.TestListener;
 import com.scenario_projects.mq_back_stage.model.BotModel;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
@@ -15,15 +16,10 @@ import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
+@Listeners({TestListener.class})
 public class N_0042_StartBotWhenBotIsAlreadyRunningTest {
 
     @BeforeClass
-    public void checkBotStatus() {
-        CheckBotStatusHelper checkBotStatusHelper = new CheckBotStatusHelper();
-        checkBotStatusHelper.checkBotStatus();
-    }
-
-    @BeforeClass(dependsOnMethods = "checkBotStatus")
     public void startBot() {
         //Get center price
         GetCenterPriceHelper getCenterPriceHelper = new GetCenterPriceHelper();
