@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Meter Qubes Back Stage Tests" verbose="1" parallel="none">
-    <test name="Users">
+    <!--<test name="Users">
         <packages>
             <package name="com.scenario_projects.mq_back_stage.tests.users"/>
         </packages>
@@ -45,20 +45,20 @@
         <packages>
             <package name="com.scenario_projects.mq_back_stage.tests.admin"/>
         </packages>
-    </test>
+    </test>-->
     <test name="Admin Bot">
         <packages>
             <package name="com.scenario_projects.mq_back_stage.tests.adminBot"/>
         </packages>
     </test>
-     <test name="Orders">
-         <packages>
-             <package name="com.scenario_projects.mq_back_stage.tests.orders"/>
-         </packages>
-     </test>
-     <test name="Exchange">
-         <packages>
-             <package name="com.scenario_projects.mq_back_stage.tests.exchange"/>
-         </packages>
-     </test>
+    <!--<test name="Orders">
+        <packages>
+            <package name="com.scenario_projects.mq_back_stage.tests.orders"/>
+        </packages>
+    </test>
+    <test name="Exchange">
+        <packages>
+            <package name="com.scenario_projects.mq_back_stage.tests.exchange"/>
+        </packages>
+    </test>-->
 </suite>

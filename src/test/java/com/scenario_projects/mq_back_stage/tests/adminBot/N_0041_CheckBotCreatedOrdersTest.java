@@ -14,15 +14,19 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.json.JSONObject;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.util.*;
 
 public class N_0041_CheckBotCreatedOrdersTest {
 
-    @BeforeTest
+    @BeforeClass
+    public void checkBotStatus() {
+        CheckBotStatusHelper checkBotStatusHelper = new CheckBotStatusHelper();
+        checkBotStatusHelper.checkBotStatus();
+    }
+
+    @BeforeClass(dependsOnMethods = "checkBotStatus")
     public void startBot() {
         //Get center price
         GetCenterPriceHelper getCenterPriceHelper = new GetCenterPriceHelper();
@@ -48,7 +52,7 @@ public class N_0041_CheckBotCreatedOrdersTest {
         ResponseBody.GetResponseBodyAndStatusCode(response, 204);
     }
 
-    @BeforeTest(dependsOnMethods = "startBot")
+    @BeforeClass(dependsOnMethods = "startBot")
     public void getBotData() {
         RequestSpecification request = RestAssured.given()
                 .header("Accept", "application/json")
@@ -67,7 +71,7 @@ public class N_0041_CheckBotCreatedOrdersTest {
         Assert.assertTrue(status);
     }
 
-    @BeforeTest(dependsOnMethods = "getBotData")
+    @BeforeClass(dependsOnMethods = "getBotData")
     public void findUserByPublicAddressAndAuthorization() {
         FindUserByPublicAddressHelper findUserByPublicAddressHelper = new FindUserByPublicAddressHelper();
         findUserByPublicAddressHelper.findUserByPublicAddress();
@@ -105,19 +109,19 @@ public class N_0041_CheckBotCreatedOrdersTest {
         CustomReporter.logAction("'buyOrdersPrice'  parameter = " + buyOrdersPrice);
         System.out.println("buyOrdersPrice = " + buyOrdersPrice);
 
-        System.out.println("(minPrice) * 100000000000L = " + (int) (BotValues.getMinPrice() * 100000000000L));
-        Assert.assertTrue(buyOrdersPrice.size() >= (int) (BotValues.getMinPrice() * 100000000000L));
+        System.out.println("(minPrice) * 100000000000L = " + Math.round(BotValues.getMinPrice() * 100000000000L));
+        Assert.assertTrue(buyOrdersPrice.size() >= Math.round(BotValues.getMinPrice() * 100000000000L));
 
         getCreatedOdersByBot.getCreatedSellOrdersByBot(sellOrdersPrice, sellResponse, BotValues.getMaxPrice(), BotValues.getCenterPrice());
 
         CustomReporter.logAction("'sellOrdersPrice' = " + sellOrdersPrice);
         System.out.println("sellOrdersPrice = " + sellOrdersPrice);
 
-        System.out.println("(centerPrice) * 100000000000L = " + (int) (BotValues.getCenterPrice() * 100000000000L));
-        Assert.assertTrue(sellOrdersPrice.size() >= (int) (BotValues.getCenterPrice() * 100000000000L));
+        System.out.println("(centerPrice) * 100000000000L = " + Math.round(BotValues.getCenterPrice() * 100000000000L));
+        Assert.assertTrue(sellOrdersPrice.size() >= Math.round(BotValues.getCenterPrice() * 100000000000L));
     }
 
-    @AfterTest
+    @AfterClass
     public void stopBot() {
         RequestSpecification request = RestAssured.given()
                 .header("Accept", "application/json")

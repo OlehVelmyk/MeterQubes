@@ -1,9 +1,6 @@
 package com.scenario_projects.mq_back_stage.tests.adminBot;
 
-import com.scenario_projects.mq_back_stage.actioHelpers.CalculateBotValues;
-import com.scenario_projects.mq_back_stage.actioHelpers.GetCenterPriceHelper;
-import com.scenario_projects.mq_back_stage.actioHelpers.GetParametersFromResponses;
-import com.scenario_projects.mq_back_stage.actioHelpers.ResponseBody;
+import com.scenario_projects.mq_back_stage.actioHelpers.*;
 import com.scenario_projects.mq_back_stage.dataProvider.BotValues;
 import com.scenario_projects.mq_back_stage.dataProvider.MarketId;
 import com.scenario_projects.mq_back_stage.dataProvider.Token;
@@ -22,29 +19,14 @@ import org.testng.annotations.*;
 @Listeners({TestListener.class})
 public class N_0040_StartAndStopBotTest {
 
-    @BeforeSuite
+    @BeforeClass
     public void checkBotStatus() {
-        RequestSpecification request = RestAssured.given()
-                .header("Accept", "application/json")
-                .header("Authorization", Token.getAdminToken());
+        CheckBotStatusHelper checkBotStatusHelper = new CheckBotStatusHelper();
+        checkBotStatusHelper.checkBotStatus();
+    }
 
-        Response response = request.get(AdminAndBotEndpoints.getBotDataByMarketId(MarketId.marketId));
-        ResponseBody.GetResponseBodyAndStatusCode(response, 200);
-
-        JsonPath jsonPathEvaluator = response.jsonPath();
-        boolean status = jsonPathEvaluator.getBoolean("isRunning");
-        CustomReporter.logAction("'isRunning' parameter received from Response is " + status);
-        System.out.println("'isRunning' parameter received from Response is " + status);
-
-        if (status) {
-            RequestSpecification request1 = RestAssured.given()
-                    .header("Accept", "application/json")
-                    .header("Authorization", Token.getAdminToken());
-
-            Response responseWhenBotIsStarted = request.patch(AdminAndBotEndpoints.stopLiqudityBot(MarketId.marketId));
-            ResponseBody.GetResponseBodyAndStatusCode(responseWhenBotIsStarted, 204);
-        }
-
+    @Test
+    public void startBot() {
         //Get center price
         GetCenterPriceHelper getCenterPriceHelper = new GetCenterPriceHelper();
         getCenterPriceHelper.getCenterPrice();
@@ -52,10 +34,7 @@ public class N_0040_StartAndStopBotTest {
         //Calculate max price, max price and price gap
         CalculateBotValues calculateBotValues = new CalculateBotValues();
         calculateBotValues.calculateBotValues();
-    }
 
-    @Test
-    public void startBot() {
         BotModel botModel = new BotModel(BotValues.getMinPrice(), BotValues.getMaxPrice(), BotValues.getPriceGap(), BotValues.getExpendInventory());
         JSONObject requestParams = new JSONObject()
                 .put("minPrice", BotModel.getMinPrice())
@@ -110,7 +89,7 @@ public class N_0040_StartAndStopBotTest {
         ResponseBody.GetResponseBodyAndStatusCode(response, 204);
     }
 
-    @AfterSuite
+    @AfterClass
     public void getBotDataAgain() {
         RequestSpecification request = RestAssured.given()
                 .header("Accept", "application/json")

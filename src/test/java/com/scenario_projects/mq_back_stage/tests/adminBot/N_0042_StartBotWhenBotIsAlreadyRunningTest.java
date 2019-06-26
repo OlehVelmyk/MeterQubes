@@ -1,9 +1,6 @@
 package com.scenario_projects.mq_back_stage.tests.adminBot;
 
-import com.scenario_projects.mq_back_stage.actioHelpers.CalculateBotValues;
-import com.scenario_projects.mq_back_stage.actioHelpers.GetCenterPriceHelper;
-import com.scenario_projects.mq_back_stage.actioHelpers.GetParametersFromResponses;
-import com.scenario_projects.mq_back_stage.actioHelpers.ResponseBody;
+import com.scenario_projects.mq_back_stage.actioHelpers.*;
 import com.scenario_projects.mq_back_stage.dataProvider.BotValues;
 import com.scenario_projects.mq_back_stage.dataProvider.MarketId;
 import com.scenario_projects.mq_back_stage.dataProvider.Token;
@@ -16,13 +13,17 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.json.JSONObject;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
-public class N_0042_StarsBotWhenBotIsAlreadyRunningTest {
+public class N_0042_StartBotWhenBotIsAlreadyRunningTest {
 
-    @BeforeTest
+    @BeforeClass
+    public void checkBotStatus() {
+        CheckBotStatusHelper checkBotStatusHelper = new CheckBotStatusHelper();
+        checkBotStatusHelper.checkBotStatus();
+    }
+
+    @BeforeClass(dependsOnMethods = "checkBotStatus")
     public void startBot() {
         //Get center price
         GetCenterPriceHelper getCenterPriceHelper = new GetCenterPriceHelper();
@@ -48,7 +49,7 @@ public class N_0042_StarsBotWhenBotIsAlreadyRunningTest {
         ResponseBody.GetResponseBodyAndStatusCode(response, 204);
     }
 
-    @BeforeTest(dependsOnMethods = "startBot")
+    @BeforeClass(dependsOnMethods = "startBot")
     public void getBotData() {
         RequestSpecification request = RestAssured.given()
                 .header("Accept", "application/json")
@@ -85,7 +86,7 @@ public class N_0042_StarsBotWhenBotIsAlreadyRunningTest {
         ResponseBody.GetResponseBodyAndStatusCode(response, 500);
     }
 
-    @AfterTest
+    @AfterClass
     public void stopBot() {
         RequestSpecification request = RestAssured.given()
                 .header("Accept", "application/json")

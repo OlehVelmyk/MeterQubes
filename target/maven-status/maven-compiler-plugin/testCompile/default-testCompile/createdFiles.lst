@@ -30,7 +30,6 @@ com/scenario_projects/mq_back_stage/endpoints/DashboardAndFavoritesEndpoints.cla
 com/scenario_projects/mq_back_stage/tests/admin/N_0025_AddNewTokenWithNotUniqueBaseTokenUrlTest.class
 com/scenario_projects/mq_back_stage/tests/exchange/N_0034_GetExchangeOrderDataByTokenIdTest.class
 com/scenario_projects/mq_back_stage/tests/favorites/N_0015_AddMarketsToUserFavoritesTest.class
-com/scenario_projects/mq_back_stage/tests/adminBot/N_0041_CheckBotCreatedOrdersTest.class
 com/scenario_projects/mq_back_stage/endpoints/AdminAndBotEndpoints.class
 com/scenario_projects/mq_back_stage/tests/users/N_0003_FindUserByUserIdTest.class
 com/scenario_projects/mq_back_stage/endpoints/OrdersEndpoints.class
@@ -43,6 +42,7 @@ com/scenario_projects/mq_back_stage/tests/users/N_0001_FindUserByPublicAddressTe
 com/scenario_projects/mq_back_stage/tests/exchange/N_0032_GetExchangeTokenDataByTokenNameTest.class
 com/scenario_projects/mq_back_stage/tests/favorites/N_0014_GetUserFavoritesMarketsTest.class
 com/scenario_projects/mq_back_stage/dataProvider/Signature.class
+com/scenario_projects/mq_back_stage/tests/adminBot/N_0042_StartBotWhenBotIsAlreadyRunningTest.class
 com/scenario_projects/mq_back_stage/endpoints/UsersEndpoints.class
 com/scenario_projects/mq_back_stage/endpoints/MarketsEndpoints.class
 com/scenario_projects/mq_back_stage/tests/favorites/N_0016_DeleteMarketFromUserFavoritesTest.class
@@ -57,6 +57,7 @@ com/scenario_projects/mq_back_stage/endpoints/TradeAndOrderBookEndpoints.class
 com/scenario_projects/mq_back_stage/tests/markets/N_0005_FindMarketsByTokenSymbolsTest.class
 com/scenario_projects/mq_back_stage/tests/exchange/N_0030_CreateExchangeOrderTokenToWrapTest.class
 com/scenario_projects/mq_back_stage/logging/CustomReporter.class
+com/scenario_projects/mq_back_stage/actioHelpers/CheckBotStatusHelper.class
 com/scenario_projects/mq_back_stage/endpoints/BaseEndpoints.class
 com/scenario_projects/mq_back_stage/logging/TestListener.class
 com/scenario_projects/mq_back_stage/tests/admin/N_0039_UpdateTradeFeesWithValuesMoreTenTest.class
