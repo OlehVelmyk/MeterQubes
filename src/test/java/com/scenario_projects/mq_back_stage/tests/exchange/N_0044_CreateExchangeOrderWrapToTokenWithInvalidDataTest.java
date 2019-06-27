@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-@Listeners({TestListener.class})
+@Listeners(TestListener.class)
 public class N_0044_CreateExchangeOrderWrapToTokenWithInvalidDataTest {
 
     @BeforeClass
@@ -28,9 +28,9 @@ public class N_0044_CreateExchangeOrderWrapToTokenWithInvalidDataTest {
     public void createExchangeOrder() {
         JSONObject requestParams = new JSONObject()
                 .put("giveTokenId", 1)
-                .put("giveAmount", "0.005")
+                .put("giveAmount", "1")
                 .put("receiveTokenId", 12)
-                .put("receiveAmount", "0.01");
+                .put("receiveAmount", "1");
 
         RequestSpecification request = RestAssured.given()
                 .header("Content-Type", "application/json")

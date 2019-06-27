@@ -9,7 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-@Listeners({TestListener.class})
+@Listeners(TestListener.class)
 public class N_0038_UpdateTradeFeesWithNegativeValuesTest {
 
     private double asMakerFeeRate = -0.003;

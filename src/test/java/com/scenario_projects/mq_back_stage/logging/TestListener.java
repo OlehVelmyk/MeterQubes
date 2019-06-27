@@ -18,12 +18,12 @@ public class TestListener implements ITestListener {
 
     @Override
     public void onTestFailure(ITestResult iTestResult) {
-        CustomReporter.log("Test is finished");
+        CustomReporter.log("Test is failed");
     }
 
     @Override
     public void onTestSkipped(ITestResult iTestResult) {
-
+        CustomReporter.log("Test is skipped");
     }
 
     @Override

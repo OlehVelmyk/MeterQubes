@@ -19,7 +19,7 @@ import org.testng.annotations.*;
 
 import java.util.*;
 
-@Listeners({TestListener.class})
+@Listeners(TestListener.class)
 public class N_0041_CheckBotCreatedOrdersTest {
 
     @BeforeClass

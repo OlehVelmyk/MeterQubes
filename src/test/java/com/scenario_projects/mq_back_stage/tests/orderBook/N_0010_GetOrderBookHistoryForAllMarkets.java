@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-@Listeners({TestListener.class})
+@Listeners(TestListener.class)
 public class N_0010_GetOrderBookHistoryForAllMarkets {
 
     @Test

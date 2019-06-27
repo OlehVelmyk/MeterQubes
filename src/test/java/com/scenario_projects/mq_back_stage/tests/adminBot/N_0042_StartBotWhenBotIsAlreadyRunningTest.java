@@ -16,7 +16,7 @@ import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-@Listeners({TestListener.class})
+@Listeners(TestListener.class)
 public class N_0042_StartBotWhenBotIsAlreadyRunningTest {
 
     @BeforeClass

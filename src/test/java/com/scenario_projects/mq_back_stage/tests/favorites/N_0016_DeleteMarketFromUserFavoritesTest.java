@@ -20,7 +20,7 @@ import org.testng.annotations.Test;
 
 import static com.scenario_projects.mq_back_stage.endpoints.DashboardAndFavoritesEndpoints.getUserFavoritesMarkets;
 
-@Listeners({TestListener.class})
+@Listeners(TestListener.class)
 public class N_0016_DeleteMarketFromUserFavoritesTest {
 
     @BeforeMethod

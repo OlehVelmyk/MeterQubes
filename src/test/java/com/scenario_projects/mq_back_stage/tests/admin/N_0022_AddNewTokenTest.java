@@ -20,7 +20,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-@Listeners({TestListener.class})
+@Listeners(TestListener.class)
 public class N_0022_AddNewTokenTest {
 
     @BeforeMethod
@@ -29,7 +29,7 @@ public class N_0022_AddNewTokenTest {
         getTradeFeesHelper.getTradeFees();
     }
 
-    @Test(description = "")
+    @Test()
     public void addNewToken() {
         TokenModel tokenModel = new TokenModel(2, "TEST" + DateProvider.currentTime(),
                 "0xdaf16fad57bc1d43a57695d1e724013" + DateProvider.currentTime(), 18, "My token",

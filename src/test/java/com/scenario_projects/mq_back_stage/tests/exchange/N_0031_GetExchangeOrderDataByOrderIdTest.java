@@ -19,7 +19,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-@Listeners({TestListener.class})
+@Listeners(TestListener.class)
 public class N_0031_GetExchangeOrderDataByOrderIdTest {
     private int tokenId = 12;
     private double tokenValue = 1;
@@ -98,5 +98,4 @@ public class N_0031_GetExchangeOrderDataByOrderIdTest {
         System.out.println("exchangeOrderId from Response is " + "'" + exchangeOrderId + "'");
         Assert.assertEquals(exchangeOrderId, ExchangeOrderId.getExchangeOrderID());
     }
-
 }

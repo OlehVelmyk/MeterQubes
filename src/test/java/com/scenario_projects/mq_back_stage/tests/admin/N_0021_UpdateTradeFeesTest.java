@@ -16,7 +16,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-@Listeners({TestListener.class})
+@Listeners(TestListener.class)
 public class N_0021_UpdateTradeFeesTest {
     private double asMakerFeeRate = Double.parseDouble(GenerateRandomFeeRate.generateFeeRate());
     private double asTakerFeeRate = Double.parseDouble(GenerateRandomFeeRate.generateFeeRate());

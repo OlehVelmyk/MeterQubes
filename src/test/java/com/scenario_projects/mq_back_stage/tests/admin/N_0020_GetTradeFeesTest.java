@@ -5,7 +5,7 @@ import com.scenario_projects.mq_back_stage.logging.TestListener;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-@Listeners({TestListener.class})
+@Listeners(TestListener.class)
 public class N_0020_GetTradeFeesTest {
 
     @Test

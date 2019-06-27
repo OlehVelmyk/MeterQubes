@@ -9,7 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-@Listeners({TestListener.class})
+@Listeners(TestListener.class)
 public class N_0039_UpdateTradeFeesWithValuesMoreTenTest {
     private double asMakerFeeRate = 10.001;
     private double asTakerFeeRate = 11;

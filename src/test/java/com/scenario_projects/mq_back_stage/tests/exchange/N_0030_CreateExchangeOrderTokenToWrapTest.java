@@ -17,7 +17,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-@Listeners({TestListener.class})
+@Listeners(TestListener.class)
 public class N_0030_CreateExchangeOrderTokenToWrapTest {
     private int tokenId = 12;
     private double tokenValue = 1;

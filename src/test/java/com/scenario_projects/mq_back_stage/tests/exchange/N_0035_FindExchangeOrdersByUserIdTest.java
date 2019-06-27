@@ -17,7 +17,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import java.util.List;
 
-@Listeners({TestListener.class})
+@Listeners(TestListener.class)
 public class N_0035_FindExchangeOrdersByUserIdTest {
 
     @BeforeMethod
