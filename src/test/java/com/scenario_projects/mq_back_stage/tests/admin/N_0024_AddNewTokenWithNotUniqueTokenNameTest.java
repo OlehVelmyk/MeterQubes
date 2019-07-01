@@ -50,6 +50,7 @@ public class N_0024_AddNewTokenWithNotUniqueTokenNameTest {
         JsonPath jsonPathEvaluator = response.jsonPath();
 
         GetParametersFromResponses getParameters = new GetParametersFromResponses();
+        getParameters.getOrderCreateResponse(jsonPathEvaluator,"id");
         getParameters.checkStringNewTokenResponse(jsonPathEvaluator, "baseToken", TokenModel.getBaseToken());
     }
 

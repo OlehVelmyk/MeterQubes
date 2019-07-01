@@ -7,11 +7,14 @@ import com.scenario_projects.mq_back_stage.actioHelpers.RunJSFiles;
 import com.scenario_projects.mq_back_stage.dataProvider.Signature;
 import com.scenario_projects.mq_back_stage.dataProvider.WalletAddress;
 import com.scenario_projects.mq_back_stage.endpoints.BaseEndpoints;
+import com.scenario_projects.mq_back_stage.logging.CustomReporter;
 import com.scenario_projects.mq_back_stage.logging.TestListener;
 import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.json.JSONObject;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -45,5 +48,11 @@ public class N_0036_AuthorizationFailed {
 
         Response response = request.post(BaseEndpoints.auth);
         ResponseBody.GetResponseBodyAndStatusCode(response, 500);
+
+        JsonPath jsonPathEvaluator = response.jsonPath();
+        String errorMessage = jsonPathEvaluator.getString("message");
+        CustomReporter.logAction("'Error message' parameter received from Response is " + "'" + errorMessage + "'");
+        System.out.println("'Error message' parameter received from Response is " + "'" + errorMessage + "'");
+        Assert.assertEquals(errorMessage, "Can't create token: UnauthorizedError: Signature verification failed");
     }
 }

@@ -7,7 +7,9 @@
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/tests/exchange/N_0047_CreateExchangeOrderTokenToWrapWithZeroValueTest.java
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/endpoints/MarketsEndpoints.java
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/tests/admin/N_0018_GetUsersWalletsTest.java
+/home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/tests/exchange/N_0053_CreateExchangeOrderWrapToTokenWithWethValueMoreThanUserWethBalanceTest.java
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/tests/favorites/N_0015_AddMarketsToUserFavoritesTest.java
+/home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/tests/adminBot/N_0052_CheckBotStatusInCreatedMarketTest.java
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/model/CenterPrice.java
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/tests/exchange/N_0035_FindExchangeOrdersByUserIdTest.java
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/tests/dashboard/N_0011_GetTradeDashboardDataByMarketIdTest.java
@@ -60,6 +62,7 @@
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/model/TokenModel.java
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/tests/markets/N_0023_FindMarketByMarketIdTest.java
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/actioHelpers/GenerateRandomFeeRate.java
+/home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/tests/admin/N_0050_AddNewTokenByNotAdminTest.java
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/tests/orders/N_0028_GetOrderByOrderIdTest.java
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/endpoints/ExchangeEndpoints.java
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/tests/ethereum/N_0017_GetFeesWalletsTest.java
@@ -72,6 +75,8 @@
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/tests/adminBot/N_0041_CheckBotCreatedOrdersTest.java
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/tests/dashboard/N_0013_GetChartDataForThePeriodTest.java
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/model/Eth.java
+/home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/tests/exchange/N_0054_CreateExchangeOrderTokenToWrapWithTokenValueMoreThanUserWalletTokenBalanceTest.java
+/home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/tests/adminBot/N_0051_StartBotByNotAdminTest.java
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/tests/users/N_0036_AuthorizationFailed.java
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/endpoints/TradeAndOrderBookEndpoints.java
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/tests/admin/N_0038_UpdateTradeFeesWithNegativeValuesTest.java

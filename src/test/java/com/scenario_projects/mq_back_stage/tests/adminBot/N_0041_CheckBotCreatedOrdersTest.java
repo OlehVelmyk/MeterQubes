@@ -120,7 +120,7 @@ public class N_0041_CheckBotCreatedOrdersTest {
         System.out.println("sellOrdersPrice = " + sellOrdersPrice);
 
         System.out.println("(centerPrice) * 100000000000L = " + Math.round(BotValues.getCenterPrice() * 100000000000L));
-        Assert.assertTrue(sellOrdersPrice.size() >= Math.round(BotValues.getCenterPrice() * 100000000000L));
+        Assert.assertNotEquals(sellOrdersPrice.size(), 0);
     }
 
     @AfterClass

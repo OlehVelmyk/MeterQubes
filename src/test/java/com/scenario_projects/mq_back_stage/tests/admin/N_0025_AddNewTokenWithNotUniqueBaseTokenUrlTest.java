@@ -50,6 +50,7 @@ public class N_0025_AddNewTokenWithNotUniqueBaseTokenUrlTest {
         JsonPath jsonPathEvaluator = response.jsonPath();
 
         GetParametersFromResponses getParameters = new GetParametersFromResponses();
+        getParameters.getOrderCreateResponse(jsonPathEvaluator,"id");
         getParameters.checkStringNewTokenResponse(jsonPathEvaluator, "baseTokenAddress", TokenModel.getBaseTokenAddress());
     }
 
