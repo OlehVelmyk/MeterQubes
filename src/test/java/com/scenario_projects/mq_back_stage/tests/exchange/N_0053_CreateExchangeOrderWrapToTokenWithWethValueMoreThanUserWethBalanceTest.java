@@ -6,6 +6,7 @@ import com.scenario_projects.mq_back_stage.actioHelpers.ResponseBody;
 import com.scenario_projects.mq_back_stage.dataProvider.Token;
 import com.scenario_projects.mq_back_stage.endpoints.ExchangeEndpoints;
 import com.scenario_projects.mq_back_stage.logging.CustomReporter;
+import com.scenario_projects.mq_back_stage.logging.TestListener;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -13,8 +14,10 @@ import io.restassured.specification.RequestSpecification;
 import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners(TestListener.class)
 public class N_0053_CreateExchangeOrderWrapToTokenWithWethValueMoreThanUserWethBalanceTest {
     private int tokenId = 12;
     private double wethValue = 100;
