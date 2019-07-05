@@ -40,6 +40,6 @@ public class N_0048_CreateExchangeOrderWrapToWrapTest {
                 .body(requestParams.toString());
 
         Response response = request.post(ExchangeEndpoints.createExchangeOrder);
-        ResponseBody.GetResponseBodyAndStatusCode(response, 400);
+        ResponseBody.GetResponseBodyAndStatusCode(response, 403);
     }
 }

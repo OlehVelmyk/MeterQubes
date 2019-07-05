@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Markets"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.301">
+  <properties />
+  
+  
+            <testcase name="getMarketsByMarketId" time="0.301" classname="com.scenario_projects.mq_back_stage.tests.markets.N_0023_FindMarketByMarketIdTest" />
+      
+</testsuite>

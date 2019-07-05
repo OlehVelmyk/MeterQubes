@@ -7,7 +7,7 @@ public class GenerateRandomDigits {
 
     public static String generateRandomDigits() {
         Random random = new Random();
-        digit = random.nextInt(900) + 100;
+        digit = random.nextInt(9999) + 1000;
         System.out.println("randomDigit = " + digit);
         return String.valueOf(digit);
     }

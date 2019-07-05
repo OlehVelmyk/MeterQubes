@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 58, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 63.282 s <<< FAILURE! - in TestSuite
+sendExchangeIdAndTransactionHashToBack(com.scenario_projects.mq_back_stage.tests.exchange.N_0029_CreateExchangeOrderWrapToTokenTest)  Time elapsed: 0.314 s  <<< FAILURE!
+java.lang.AssertionError: expected [204] but found [500]
+	at com.scenario_projects.mq_back_stage.tests.exchange.N_0029_CreateExchangeOrderWrapToTokenTest.sendExchangeIdAndTransactionHashToBack(N_0029_CreateExchangeOrderWrapToTokenTest.java:99)
+

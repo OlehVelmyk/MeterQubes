@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Users</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Users</h1>
+<p>
+  Test duration: 5.165s
+</p>
+
+
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.users.N_0001_FindUserByPublicAddressTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  findUserByPublicAddress
+      </td>
+  <td class="duration">
+    0.299s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [15:13:17.067037] Test is started<br />
+                                [15:13:17.33796] ACTION: Response body is {"id":4,"nonce":"85zb4PP3KbMjJBR6dd5d3l6qoOgxQrULyXsyg_Ke0i-YGVksDmDYzS6j_PCvX_sMOEFUZWfrRu7Eq6cNDdRSYw","isAdmin":false}<br />
+                                [15:13:17.338544] ACTION: Status code: 200<br />
+                                [15:13:17.35852] ACTION: Nonce received from Response is '85zb4PP3KbMjJBR6dd5d3l6qoOgxQrULyXsyg_Ke0i-YGVksDmDYzS6j_PCvX_sMOEFUZWfrRu7Eq6cNDdRSYw'<br />
+                                [15:13:17.366348] ACTION: User Id from Response is '4'<br />
+                                [15:13:17.36686] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.users.N_0002_Authorization</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  authorizationSuccessful
+      </td>
+  <td class="duration">
+    0.524s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [15:13:19.343008] Test is started<br />
+                                [15:13:19.864609] ACTION: Response body is eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7ImlkIjo0LCJwdWJsaWNBZGRyZXNzIjoiMHg0RUM3ZTc1MzBlMjQ3YWEzMzQzQWE3QmMxN2UxNjc3OUE1NzU4ZTVjIn0sImlhdCI6MTU2MjMyODc5OX0.6RLiiRjvwGgJeJ3NR5EFE01QikAzyQtSbWy_Xaq2Sdw<br />
+                                [15:13:19.865175] ACTION: Status code: 200<br />
+                                [15:13:19.866397] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.users.N_0003_FindUserByUserIdTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  findUserByUserId
+      </td>
+  <td class="duration">
+    0.353s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [15:13:16.712337] Test is started<br />
+                                [15:13:17.036349] ACTION: Response body is {"id":4,"nonce":"85zb4PP3KbMjJBR6dd5d3l6qoOgxQrULyXsyg_Ke0i-YGVksDmDYzS6j_PCvX_sMOEFUZWfrRu7Eq6cNDdRSYw","role":"CLIENT"}<br />
+                                [15:13:17.037009] ACTION: Status code: 200<br />
+                                [15:13:17.055445] ACTION: User Id from Response is '4'<br />
+                                [15:13:17.064806] ACTION: Role  from Response is 'CLIENT'<br />
+                                [15:13:17.065283] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.users.N_0036_AuthorizationFailed</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  authorizationAgain
+      </td>
+  <td class="duration">
+    0.874s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [15:13:18.166525] Test is started<br />
+                                [15:13:19.016659] ACTION: Response body is {"message":"Can't create token: UnauthorizedError: Signature verification failed"}<br />
+                                [15:13:19.017331] ACTION: Status code: 500<br />
+                                [15:13:19.039776] ACTION: 'Error message' parameter received from Response is 'Can't create token: UnauthorizedError: Signature verification failed'<br />
+                                [15:13:19.040309] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

@@ -84,11 +84,11 @@ public class N_0029_CreateExchangeOrderWrapToTokenTest {
         runFileJS.runJSfile("src/test/java/resources/node src/test/java/resources/swapOnFront.js");
     }
 
-    @Test/*(dependsOnMethods = "createExchangeOrder")*/
+    @Test(dependsOnMethods = "createExchangeOrder")
     public void sendExchangeIdAndTransactionHashToBack() {
         JSONObject requestParams = new JSONObject()
                 .put("exchangeOrderId", ExchangeOrderId.getExchangeOrderID())
-                .put("txHash", TransactionHash.getHash().replace("374", GenerateRandomDigits.generateRandomDigits()));
+                .put("txHash", TransactionHash.getHash().replace("8659", GenerateRandomDigits.generateRandomDigits()));
 
         RequestSpecification request = RestAssured.given()
                 .header("Content-Type", "application/json")

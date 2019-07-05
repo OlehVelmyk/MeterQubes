@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Favorites markets"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.281">
+  <properties />
+  
+  
+            <testcase name="deleteMarketFromUserFavorites" time="0.281" classname="com.scenario_projects.mq_back_stage.tests.favorites.N_0016_DeleteMarketFromUserFavoritesTest" />
+      
+</testsuite>

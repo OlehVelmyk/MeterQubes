@@ -89,7 +89,7 @@ public class N_0030_CreateExchangeOrderTokenToWrapTest {
 
         JSONObject requestParams = new JSONObject()
                 .put("exchangeOrderId", ExchangeOrderId.getExchangeOrderID())
-                .put("txHash", TransactionHash.getHash().replace("374", GenerateRandomDigits.generateRandomDigits()));
+                .put("txHash", TransactionHash.getHash().replace("8659", GenerateRandomDigits.generateRandomDigits()));
 
         RequestSpecification request = RestAssured.given()
                 .header("Content-Type", "application/json")

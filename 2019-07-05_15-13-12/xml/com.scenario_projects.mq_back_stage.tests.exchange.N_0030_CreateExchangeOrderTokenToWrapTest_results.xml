@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Exchange"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="1.999">
+  <properties />
+  
+  
+            <testcase name="sendExchangeIdAndTransactionHashToBack" time="0.277" classname="com.scenario_projects.mq_back_stage.tests.exchange.N_0030_CreateExchangeOrderTokenToWrapTest" />
+                <testcase name="createExchangeOrder" time="1.722" classname="com.scenario_projects.mq_back_stage.tests.exchange.N_0030_CreateExchangeOrderTokenToWrapTest" />
+      
+</testsuite>

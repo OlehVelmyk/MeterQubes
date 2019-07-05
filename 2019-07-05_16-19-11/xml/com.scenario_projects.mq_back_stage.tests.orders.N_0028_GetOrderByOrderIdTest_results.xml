@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Orders"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.360">
+  <properties />
+  
+  
+            <testcase name="getOrderByOrderId" time="0.360" classname="com.scenario_projects.mq_back_stage.tests.orders.N_0028_GetOrderByOrderIdTest" />
+      
+</testsuite>

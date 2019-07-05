@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Trade History"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.323">
+  <properties />
+  
+  
+            <testcase name="getTradeHistory" time="0.323" classname="com.scenario_projects.mq_back_stage.tests.trade.N_0007_GetTradeHistory" />
+      
+</testsuite>

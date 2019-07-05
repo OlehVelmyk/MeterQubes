@@ -81,4 +81,11 @@ public class GetParametersFromResponses {
         System.out.println("'" + botData + "' " + "parameter received from Response is " + response);
         Assert.assertEquals(Double.parseDouble(response), botModel);
     }
+
+    public void getBotDataParametersInCreatedToken(JsonPath jsonPathEvaluator, String botData) {
+        String response = jsonPathEvaluator.getString(botData);
+        CustomReporter.logAction("'" + botData + "' " + "parameter received from Response is " + response);
+        System.out.println("'" + botData + "' " + "parameter received from Response is " + response);
+        Assert.assertEquals(Integer.parseInt(response), 0);
+    }
 }

@@ -5,6 +5,7 @@ import com.scenario_projects.mq_back_stage.actioHelpers.ResponseBody;
 import com.scenario_projects.mq_back_stage.dataProvider.DateProvider;
 import com.scenario_projects.mq_back_stage.dataProvider.Token;
 import com.scenario_projects.mq_back_stage.endpoints.AdminAndBotEndpoints;
+import com.scenario_projects.mq_back_stage.logging.CustomReporter;
 import com.scenario_projects.mq_back_stage.logging.TestListener;
 import com.scenario_projects.mq_back_stage.model.TokenModel;
 import io.restassured.RestAssured;
@@ -12,6 +13,7 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.json.JSONObject;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -63,6 +65,22 @@ public class N_0052_CheckBotStatusInCreatedMarketTest {
                 .header("Authorization", Token.getAdminToken());
 
         Response response = request.get(AdminAndBotEndpoints.getBotDataByMarketId(marketId));
-        ResponseBody.GetResponseBodyAndStatusCode(response, 500);
+        ResponseBody.GetResponseBodyAndStatusCode(response, 200);
+
+        JsonPath jsonPathEvaluator = response.jsonPath();
+        int expandInventory = jsonPathEvaluator.getInt("expandInventory");
+        CustomReporter.logAction("'expandInventory' parameter received from Response is " + "'" + expandInventory + "'");
+        System.out.println("'expandInventory' parameter received from Response is " + "'" + expandInventory + "'");
+        Assert.assertEquals(expandInventory, -1);
+
+        Boolean isRunning = jsonPathEvaluator.getBoolean("isRunning");
+        CustomReporter.logAction("'isRunning' parameter received from Response is " + "'" + isRunning + "'");
+        System.out.println("'isRunning' parameter received from Response is " + "'" + isRunning + "'");
+        Assert.assertFalse(isRunning);
+
+        GetParametersFromResponses getParametersFromResponses = new GetParametersFromResponses();
+        getParametersFromResponses.getBotDataParametersInCreatedToken(jsonPathEvaluator, "maxPrice");
+        getParametersFromResponses.getBotDataParametersInCreatedToken(jsonPathEvaluator, "minPrice");
+        getParametersFromResponses.getBotDataParametersInCreatedToken(jsonPathEvaluator, "priceGap");
     }
 }
