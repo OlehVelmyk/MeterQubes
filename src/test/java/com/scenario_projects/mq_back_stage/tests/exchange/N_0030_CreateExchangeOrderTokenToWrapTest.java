@@ -20,7 +20,7 @@ import org.testng.annotations.Test;
 @Listeners(TestListener.class)
 public class N_0030_CreateExchangeOrderTokenToWrapTest {
     private int tokenId = 12;
-    private double tokenValue = 1;
+    private double tokenValue = 22;
     private double wethValue;
 
     @BeforeClass
@@ -89,7 +89,7 @@ public class N_0030_CreateExchangeOrderTokenToWrapTest {
 
         JSONObject requestParams = new JSONObject()
                 .put("exchangeOrderId", ExchangeOrderId.getExchangeOrderID())
-                .put("txHash", TransactionHash.getHash());
+                .put("txHash", TransactionHash.getHash().replace("374", GenerateRandomDigits.generateRandomDigits()));
 
         RequestSpecification request = RestAssured.given()
                 .header("Content-Type", "application/json")
@@ -97,6 +97,6 @@ public class N_0030_CreateExchangeOrderTokenToWrapTest {
                 .body(requestParams.toString());
 
         Response response = request.post(ExchangeEndpoints.handleExchangeOrderTransactionHash);
-        ResponseBody.GetResponseBodyAndStatusCode(response, 200);
+        ResponseBody.GetResponseBodyAndStatusCode(response, 204);
     }
 }

@@ -10,7 +10,7 @@ public class CalculateBotValues {
 
     public void calculateBotValues() {
 
-        minPrice = BotValues.getCenterPrice() / 2;
+        minPrice = BotValues.getCenterPrice() / 4;
         BotValues.setMinPrice(minPrice);
         CustomReporter.logAction("minPrice = " + minPrice);
         System.out.println("minPrice = " + minPrice);
@@ -20,7 +20,7 @@ public class CalculateBotValues {
         CustomReporter.logAction("maxPrice = " + maxPrice);
         System.out.println("maxPrice = " + maxPrice);
 
-        priceGap = BotValues.getCenterPrice() / 4;
+        priceGap = BotValues.getCenterPrice() / 5;
         BotValues.setPriceGap(priceGap);
         CustomReporter.logAction("priceGap = " + priceGap);
         System.out.println("priceGap = " + priceGap);

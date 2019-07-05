@@ -20,7 +20,7 @@ import org.testng.annotations.Test;
 @Listeners(TestListener.class)
 public class N_0029_CreateExchangeOrderWrapToTokenTest {
     private int tokenId = 12;
-    private double wethValue = 0.05;
+    private double wethValue = 0.000000001;
     private double tokenValue;
 
     @BeforeClass
@@ -84,11 +84,11 @@ public class N_0029_CreateExchangeOrderWrapToTokenTest {
         runFileJS.runJSfile("src/test/java/resources/node src/test/java/resources/swapOnFront.js");
     }
 
-    @Test(dependsOnMethods = "createExchangeOrder")
+    @Test/*(dependsOnMethods = "createExchangeOrder")*/
     public void sendExchangeIdAndTransactionHashToBack() {
         JSONObject requestParams = new JSONObject()
                 .put("exchangeOrderId", ExchangeOrderId.getExchangeOrderID())
-                .put("txHash", TransactionHash.getHash());
+                .put("txHash", TransactionHash.getHash().replace("374", GenerateRandomDigits.generateRandomDigits()));
 
         RequestSpecification request = RestAssured.given()
                 .header("Content-Type", "application/json")
@@ -96,6 +96,6 @@ public class N_0029_CreateExchangeOrderWrapToTokenTest {
                 .body(requestParams.toString());
 
         Response response = request.post(ExchangeEndpoints.handleExchangeOrderTransactionHash);
-        ResponseBody.GetResponseBodyAndStatusCode(response, 200);
+        ResponseBody.GetResponseBodyAndStatusCode(response, 204);
     }
 }

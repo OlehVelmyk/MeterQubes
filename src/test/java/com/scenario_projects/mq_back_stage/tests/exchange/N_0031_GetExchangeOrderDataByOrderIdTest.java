@@ -22,7 +22,7 @@ import org.testng.annotations.Test;
 @Listeners(TestListener.class)
 public class N_0031_GetExchangeOrderDataByOrderIdTest {
     private int tokenId = 12;
-    private double tokenValue = 1;
+    private double tokenValue = 22;
     private double wethValue;
 
     @BeforeClass

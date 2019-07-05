@@ -111,8 +111,8 @@ public class N_0041_CheckBotCreatedOrdersTest {
         CustomReporter.logAction("'buyOrdersPrice'  parameter = " + buyOrdersPrice);
         System.out.println("buyOrdersPrice = " + buyOrdersPrice);
 
-        System.out.println("(minPrice) * 100000000000L = " + Math.round(BotValues.getMinPrice() * 100000000000L));
-        Assert.assertTrue(buyOrdersPrice.size() >= Math.round(BotValues.getMinPrice() * 100000000000L));
+        System.out.println("(minPrice) * 100000000000L = " + Math.round(BotValues.getCenterPrice() * 100000000000L));
+        Assert.assertTrue(buyOrdersPrice.size() >= Math.round(BotValues.getCenterPrice() * 100000000000L));
 
         getCreatedOdersByBot.getCreatedSellOrdersByBot(sellOrdersPrice, sellResponse, BotValues.getMaxPrice(), BotValues.getCenterPrice());
 
@@ -120,7 +120,7 @@ public class N_0041_CheckBotCreatedOrdersTest {
         System.out.println("sellOrdersPrice = " + sellOrdersPrice);
 
         System.out.println("(centerPrice) * 100000000000L = " + Math.round(BotValues.getCenterPrice() * 100000000000L));
-        Assert.assertNotEquals(sellOrdersPrice.size(), 0);
+        Assert.assertTrue(sellOrdersPrice.size() >= Math.round(BotValues.getCenterPrice() * 100000000000L));
     }
 
     @AfterClass

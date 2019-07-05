@@ -17,7 +17,7 @@ public class GetCreatedOdersByBot {
             OrderBook orderBook = gson.fromJson(toJson, OrderBook.class);
             //System.out.println("orderBook.getPrice() = " + orderBook.getPrice());
 
-            if (minPrice <= orderBook.getPrice() && orderBook.getPrice() < centerPrice) {
+            if (minPrice <= orderBook.getPrice() && orderBook.getPrice() <= centerPrice) {
                 buyOrdersPrice.add(orderBook.getPrice());
             }
         }
