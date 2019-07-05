@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Exchange</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Exchange</h1>
+<p>
+  Test duration: 24.021s
+</p>
+
+
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.exchange.N_0029_CreateExchangeOrderWrapToTokenTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  createExchangeOrder
+      </td>
+  <td class="duration">
+    1.730s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:09:30.570729] Test is started<br />
+                                [17:09:31.07683] ACTION: Response body is {"exchangeOrderIdDB":86,"exchangeOrderIdEth":"0xf3c6905c7e91e6dfbd62dd4749283ded9de5cd46fd05f3916eee95155c0ebf5e","exchangeOrderData":{"exchange":"0x4aa335be177bba2fe3289ceb94d00fb34e94007b","maker":"0x96241186ca4aa79f5bd593a02c29a38da785251e","taker":"0x619e403af18365d09719456923c4a93b41ad3db1","makerToken":"0xdaf16fad57bc1d43a57695d1e724013ebe8e154a","takerToken":"0x251bbfa0abf2dc356a44f7af5e4d7a224a4ec01f","feeRecipient":"0x37398a06d8bd553410d7404680ebed4638bb005b","makerTokenAmount":"35714285714285715000","takerTokenAmount":"1000000000","makerFee":0,"takerFee":0,"expirationTimestampInSec":1562335951,"salt":184178413437180},"exchangeOrderSignature":{"v":28,"r":"0x82b0a74086131f45335ab801c7cb60cf3824059a8ebce99225976f54d63c2e79","s":"0x6a00fa653aeac5e00c9bb39187d9a0e8d5a9e3c0007ac810d4a6913bf7f12391"}}<br />
+                                [17:09:31.077041] ACTION: Status code: 200<br />
+                                [17:09:31.086224] ACTION: 'exchangeOrderIdDB' parameter received from Response is 86<br />
+                                [17:09:32.300533] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  sendExchangeIdAndTransactionHashToBack
+      </td>
+  <td class="duration">
+    0.267s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:09:32.301651] Test is started<br />
+                                [17:09:32.568453] ACTION: Response body is <br />
+                                [17:09:32.568648] ACTION: Status code: 204<br />
+                                [17:09:32.568825] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.exchange.N_0030_CreateExchangeOrderTokenToWrapTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  createExchangeOrder
+      </td>
+  <td class="duration">
+    2.433s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:09:24.463051] Test is started<br />
+                                [17:09:25.003109] ACTION: Response body is {"exchangeOrderIdDB":85,"exchangeOrderIdEth":"0x1905aeefac47d3e8d483aa2eb81f0c528f1caeb88bd23c114ace101810cd9344","exchangeOrderData":{"exchange":"0x4aa335be177bba2fe3289ceb94d00fb34e94007b","maker":"0x96241186ca4aa79f5bd593a02c29a38da785251e","taker":"0x619e403af18365d09719456923c4a93b41ad3db1","makerToken":"0x251bbfa0abf2dc356a44f7af5e4d7a224a4ec01f","takerToken":"0xdaf16fad57bc1d43a57695d1e724013ebe8e154a","feeRecipient":"0x37398a06d8bd553410d7404680ebed4638bb005b","makerTokenAmount":"616000000","takerTokenAmount":"22000000000000000000","makerFee":0,"takerFee":0,"expirationTimestampInSec":1562335944,"salt":117018592506267},"exchangeOrderSignature":{"v":27,"r":"0x5a4657fd2aef464032ef9a8c5ddb15c01a615877e0ee1ad8ad44e85eac506b35","s":"0x22ae1ff5dfb8743feea3a7127c5ac716d016c1a7272c58d351337b73cff9c85c"}}<br />
+                                [17:09:25.003189] ACTION: Status code: 200<br />
+                                [17:09:25.007037] ACTION: 'exchangeOrderIdDB' parameter received from Response is 85<br />
+                                [17:09:26.896525] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  sendExchangeIdAndTransactionHashToBack
+      </td>
+  <td class="duration">
+    0.260s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:09:26.896901] Test is started<br />
+                                [17:09:27.155993] ACTION: Response body is <br />
+                                [17:09:27.156072] ACTION: Status code: 204<br />
+                                [17:09:27.156123] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.exchange.N_0031_GetExchangeOrderDataByOrderIdTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  getExchangeOrderByOrderId
+      </td>
+  <td class="duration">
+    0.290s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:09:37.88969] Test is started<br />
+                                [17:09:38.166611] ACTION: Response body is {"id":87,"exchangeOrderIdEth":"0xfe293723cbcdcc5b1c56af74b358b9df13d1a1eb52e1935e9adbcd53d57e0706","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"}<br />
+                                [17:09:38.166844] ACTION: Status code: 200<br />
+                                [17:09:38.179135] ACTION: exchangeOrderId  from Response is '87'<br />
+                                [17:09:38.179387] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.exchange.N_0032_GetExchangeTokenDataByTokenNameTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  getExchangeTokenByTokenName
+      </td>
+  <td class="duration">
+    0.332s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:09:27.897786] Test is started<br />
+                                [17:09:28.217551] ACTION: Response body is [{"id":12,"tokenSymbol":"EMPR","tokenName":"empowr coin","tokenAddress":"0xdaf16fad57bc1d43a57695d1e724013ebe8e154a","tokenDecimals":18,"minOrderSize":"0.0000000001","currentPriceToWETH":"0.000000000028000000","givePriceToWETH":"0.000000000030000000","receivePriceToWETH":"0.000000000028000000"}]<br />
+                                [17:09:28.217749] ACTION: Status code: 200<br />
+                                [17:09:28.228873] ACTION: Token name from Response is 'EMPR'<br />
+                                [17:09:28.229133] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.exchange.N_0033_GetExchangeTokenDataByTokenIdTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  getExchangeTokenDataByTokenId
+      </td>
+  <td class="duration">
+    0.347s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:09:19.992917] Test is started<br />
+                                [17:09:20.334829] ACTION: Response body is {"id":1,"tokenSymbol":"ETH","tokenName":"wrapped ETH","tokenAddress":"0x251bbfa0abf2dc356a44f7af5e4d7a224a4ec01f","tokenDecimals":18,"minOrderSize":"0.0000000005","currentPriceToWETH":"1.000000000000000000","givePriceToWETH":"1.004592422502870000","receivePriceToWETH":"0.997321086873325700"}<br />
+                                [17:09:20.334966] ACTION: Status code: 200<br />
+                                [17:09:20.33984] ACTION: Token id from Response is '1'<br />
+                                [17:09:20.339962] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.exchange.N_0034_GetExchangeOrderDataByTokenIdTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  getExchangeOrderDataByTokenId
+      </td>
+  <td class="duration">
+    0.308s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:09:33.505841] Test is started<br />
+                                [17:09:33.803447] ACTION: Response body is [{"id":1,"exchangeOrderIdEth":"0x82650f00bf69bed4f2e738e89abfd93fa2b2627ae5782981184f50431117e0ef","giveTokenId":1,"receiveTokenId":12,"giveAmount":"10000000000000000","receiveAmount":"20000000000000000","status":"FILLED"},{"id":2,"exchangeOrderIdEth":"0x266ec782bc6fd912f592c0d0496c1ffb46dd18debafe46deda92bb72e86661f5","giveTokenId":1,"receiveTokenId":12,"giveAmount":"30000000000000000","receiveAmount":"60000000000000000","status":"FILLED"},{"id":3,"exchangeOrderIdEth":"0xb6c4f846a287defea375d47c76af1de29d8866361f98304d5e79b8fe87228c26","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":9,"exchangeOrderIdEth":"0xbbe4cd126d40dcf9e6f13694a30b37ceab0a7f34b997e5f16378597359a49804","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":12,"exchangeOrderIdEth":"0xbc5cc1376cafc4d7e26bfb6ec49c27c8958f2c5939d1ddf66f1a6129c5717e74","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":14,"exchangeOrderIdEth":"0xec2fdb863cadc43f344ae43408f406e17be69fab816f7f14c83cdc60c7263904","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":16,"exchangeOrderIdEth":"0xbd48356230086910abbf4278d03cbbdb34545b5e82b12dacb937e4bd0f131804","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":18,"exchangeOrderIdEth":"0xf5be2026e70dc0308559cb7964d4770c2d5590a6a462ef389e131babd5e80271","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":20,"exchangeOrderIdEth":"0x98dcd9b95721f96744cd16a3ef5a637c899d473a095c1b117a10480084a9e6d7","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":22,"exchangeOrderIdEth":"0xf9e549b3518a630807958daafe1cdd88ec7214699bf20042786cc8e6769db2e0","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":24,"exchangeOrderIdEth":"0xdaa2778067f295dbafa98b26c588aaeda79f2d2c0cf8a6885e72e0f241de1176","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":26,"exchangeOrderIdEth":"0xb760f968b299ea5bd00db73d06f63d9495079284cba6d81686a8fc664003204f","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":28,"exchangeOrderIdEth":"0xa97e51e602ff050e6eead1dca95f33b8ce0a82f7bd99cc6b8b4b5573afdc054a","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":30,"exchangeOrderIdEth":"0x28f052d81601a8d8e3dd4220b1868eee15724e15d5d09f2289a5387139fb8ee4","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":32,"exchangeOrderIdEth":"0xad94e33aa6256ba476be7e4db64f9d87eef52d166fd66c93e5974fdcc76ffb22","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":34,"exchangeOrderIdEth":"0x412c564230e3276e42f3fc3a7625cc89841291701033efa6a63339d1adcfd1af","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":36,"exchangeOrderIdEth":"0x2d5939c25431df96659b5f1180237d810c56fb3b95ed0ccf75a8aa8d0ee2f54d","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":38,"exchangeOrderIdEth":"0xf6d7d90d7f3a2b266d4f9ade0b6a6a20d631b5dfe64e89bb3f58a8fb964776a7","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":40,"exchangeOrderIdEth":"0xaa5d47f9a8e57a1859f59410a13f12e46750e036ae638d311aff2d52a6e1f314","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":41,"exchangeOrderIdEth":"0xd601a626aeb8c0964c7616edebf53fbe44584ce55a1ddb362fa8b9eec47be749","giveTokenId":1,"receiveTokenId":12,"giveAmount":"500000000","receiveAmount":"16666666666666668000","status":"FILLED"},{"id":42,"exchangeOrderIdEth":"0xfb4a94a048921f9d9b2b4cbdf2f4e3c156e981d5ee48a0185f7a1cf63a19b6e1","giveTokenId":12,"receiveTokenId":1,"giveAmount":"30000000000000000000","receiveAmount":"900000000","status":"PENDING"},{"id":43,"exchangeOrderIdEth":"0x20448c3a7370c7b2cd736db50632b4693737979511f6b7a99f5f05375a6e1abe","giveTokenId":12,"receiveTokenId":1,"giveAmount":"20000000000000000000","receiveAmount":"600000000","status":"FILLED"},{"id":45,"exchangeOrderIdEth":"0x13faccc68e203f0c2a23d6f0320bc84ce9b8478a572b45eb31b724d9b679326f","giveTokenId":1,"receiveTokenId":12,"giveAmount":"10000000000","receiveAmount":"333333333333333300000","status":"PENDING"},{"id":44,"exchangeOrderIdEth":"0x8736b0dea5c43f16e9a7de0c052a19cb6c9a7b1783f556418ec6fd14d80b8b51","giveTokenId":12,"receiveTokenId":1,"giveAmount":"20000000000000000000","receiveAmount":"600000000","status":"FILLED"},{"id":46,"exchangeOrderIdEth":"0x541b31f1e4fe3d3148e03654caf08bdf606efed47bd81a512da285dea7011933","giveTokenId":1,"receiveTokenId":12,"giveAmount":"4500000000","receiveAmount":"150000000000000000000","status":"FILLED"},{"id":47,"exchangeOrderIdEth":"0x59c353763360ca2cb27d96d163a36edc5aa2b6b1f075a1cd7e7eba526304345d","giveTokenId":1,"receiveTokenId":12,"giveAmount":"4500000000","receiveAmount":"150000000000000000000","status":"FILLED"},{"id":48,"exchangeOrderIdEth":"0xbea98226d178f8545eea0398870dd4fe0d9452321734d5ffcaf295655e251812","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"33333333333333336000","status":"PENDING"},{"id":49,"exchangeOrderIdEth":"0xa073de27e9cbaebde44b06b14bf4c540b2ae0712e7330c8a3337002494466168","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"33333333333333336000","status":"PENDING"},{"id":50,"exchangeOrderIdEth":"0x44e89b82b4dfd89a62570df150afc435445f696aeda9bd5f8d067a81a23ff0e8","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"33333333333333336000","status":"PENDING"},{"id":51,"exchangeOrderIdEth":"0x2651e2cc780b6e663151369e47f06daadb8bbb00d2c234dd5e4adc556200d987","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"33333333333333336000","status":"PENDING"},{"id":52,"exchangeOrderIdEth":"0x5853a149a638719a0fc7811aa8dc3e6c8121ce512ab0a5c843ee7696df78b945","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"33333333333333336000","status":"PENDING"},{"id":53,"exchangeOrderIdEth":"0x3327c516741ee3dc0f061d5ab1f8708bff57c15205955727c85a420eafca846a","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"33333333333333336000","status":"PENDING"},{"id":54,"exchangeOrderIdEth":"0x92bd1675e99b835115b8d4aff72f6f51ce2398f0ff7899851e7ad3bf305768a9","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"660000000","status":"PENDING"},{"id":55,"exchangeOrderIdEth":"0x36f8e9c1660f64ace64259b1d8f9ef5b4df8160c81c88e19e680b7f5e78c3298","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"660000000","status":"PENDING"},{"id":56,"exchangeOrderIdEth":"0xfd6f408a0a1e5fe263120933ef232913e15a101e8dcb06fcd42f286ba3f2f25d","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"660000000","status":"PENDING"},{"id":57,"exchangeOrderIdEth":"0x2a67f9372f22e1a597212184b4ff1ad5162963662fde265acf9ac6132c7a9f28","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":58,"exchangeOrderIdEth":"0xc5ac70d890ee6f1a53a1b247b5eb65feec54e89446fd4249d1c8f0952dc6b77e","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"},{"id":59,"exchangeOrderIdEth":"0x608721735cc87bbb2e2a4dd95d62f1ab39c296ede0e47fbec9e2c1694b6c5118","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":60,"exchangeOrderIdEth":"0xd92b71bd8ba6a5f250018199972510de044b95d92d9744efed3f67efe4f17bc9","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":61,"exchangeOrderIdEth":"0xe96a749dcb80e904075f529cbe5b800c73a2ca4ca25438d6cef83ac927a9daeb","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"},{"id":62,"exchangeOrderIdEth":"0x9c6a9fbcb1e578d6d326f3fea8fb55e114b885fff552ea01d24a8f5dde39d14b","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":63,"exchangeOrderIdEth":"0xa9581272da2fbf5dbc7040a75d04d71461e3bf905ccd96bee72c8a2b86d9c56e","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"},{"id":64,"exchangeOrderIdEth":"0x131bcd426449055fc836522f4bd797905d8ad4c6ca6c22129f68e74e9f1ef159","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"},{"id":65,"exchangeOrderIdEth":"0x84bccfeef3be7b0b8f49484e3a5f066a6452d357e407c078505cd7b82b0c7d56","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"},{"id":66,"exchangeOrderIdEth":"0xefaae6371bd95baef9b072faa87f53b334644297779b3865bb9083fbde70f102","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"},{"id":67,"exchangeOrderIdEth":"0xa0c3150ae984b99c353e9b2266d35e25eb5be3d69de30c781cf3dbf80f4fe988","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":68,"exchangeOrderIdEth":"0x7df0f3c8d4c15f25fd9b8fb0912f419975e5920ab79075d1a193b482dff97207","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"},{"id":69,"exchangeOrderIdEth":"0x9b89a087a6d18ef5e6b62d25090246101981ee58697b3316bc03879a4cfa1060","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":70,"exchangeOrderIdEth":"0x287b37cbb489eab3e3bdda720b23d68d339c9346abd2dd5a164ca35ddad3364f","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":71,"exchangeOrderIdEth":"0x23c005d57de86e64a8c1301e886bf33de296005bcd4e81b8bd876465f34ed1ff","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"},{"id":72,"exchangeOrderIdEth":"0x5cad0c4357ab6efed306752d23c26b05fab1837b0bcf643cc6a4f83eb8615f1b","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":73,"exchangeOrderIdEth":"0x83f583200458e0a023e1d3939ceb51386fdb1306d124b412eb4987194644624c","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":74,"exchangeOrderIdEth":"0x4dfb86bc12636777b7742c834e05b25dbfbb165581edbd2deb980df7976c39fe","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":75,"exchangeOrderIdEth":"0x50be10757ae1f1e50424f314429a22f25ced9ac9b29dd4f109cbe303683e3fe1","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":76,"exchangeOrderIdEth":"0xf9fa6b9684adf5f9732ce7e2cdf0d8b03c47141dbe8dc22be9566a418c456432","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"},{"id":77,"exchangeOrderIdEth":"0x064cd6d4716f711ddbaffc6ede89f93b54e997e50ffc6d0e1aa6394cd4ea9843","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":78,"exchangeOrderIdEth":"0x39e02bc23eb8296ab45b9a3387ce5589cd183a55266f69d9981b6666a1c29a9c","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"},{"id":79,"exchangeOrderIdEth":"0xc32971835c8669ae07e62983e2a240897a7de2bb6e2b805965ae71b28b979d7a","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"},{"id":80,"exchangeOrderIdEth":"0x5fa71ce063da914c5cd5ae5c9ef7dd513edca3d757afba3c603073a5703eb100","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"},{"id":81,"exchangeOrderIdEth":"0xa6b16b956af1db770c0ce47b16df4dfd5ea88791a49fcdbaba0df2d46c867646","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"},{"id":82,"exchangeOrderIdEth":"0xd624019f74cd9c7f1dca03453c8852a7fe46400b9fed5a44233c4e151f971269","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":83,"exchangeOrderIdEth":"0x5c52e6c08788b13894f9badcc3b0741ac481af403cae452621bb458c9839eec3","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":84,"exchangeOrderIdEth":"0x7fa9ddeb6ca13cfc4fc73e192316985aa3451023c3cf34335706c19af380c53e","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":85,"exchangeOrderIdEth":"0x1905aeefac47d3e8d483aa2eb81f0c528f1caeb88bd23c114ace101810cd9344","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":86,"exchangeOrderIdEth":"0xf3c6905c7e91e6dfbd62dd4749283ded9de5cd46fd05f3916eee95155c0ebf5e","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"}]<br />
+                                [17:09:33.803605] ACTION: Status code: 200<br />
+                                [17:09:33.813901] ACTION: Token id from Response is '[1, 2, 3, 9, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 41, 42, 43, 45, 44, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86]'<br />
+                                [17:09:33.814013] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.exchange.N_0035_FindExchangeOrdersByUserIdTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  getExchangeOrderDataByTokenId
+      </td>
+  <td class="duration">
+    0.726s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:09:34.114082] Test is started<br />
+                                [17:09:34.810153] ACTION: Response body is [{"id":3,"exchangeOrderIdEth":"0xb6c4f846a287defea375d47c76af1de29d8866361f98304d5e79b8fe87228c26","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":4,"exchangeOrderIdEth":"0x2b7659b58b2e02799b71c2e800289d1f141631742b3c5705706bd06a6e3c9252","giveTokenId":12,"receiveTokenId":12,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":5,"exchangeOrderIdEth":"0x9b10364054b08a4e18318baf540cf3b1f078e6fa524168d2fdb73ec29d5c7895","giveTokenId":12,"receiveTokenId":12,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":6,"exchangeOrderIdEth":"0x86bde817dca476651a498dd779dea5a0e8035a8785095d14ef06e5b47e1263a8","giveTokenId":12,"receiveTokenId":12,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":7,"exchangeOrderIdEth":"0xb3814befd0351daa7306b37c03991903e88929dde091bdf8acd30f3f0e484c9b","giveTokenId":12,"receiveTokenId":12,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":8,"exchangeOrderIdEth":"0x24d8583278217c073d808f2663ff2d24538923328b2baa9d3f6b3b3dabf6bc40","giveTokenId":12,"receiveTokenId":12,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":9,"exchangeOrderIdEth":"0xbbe4cd126d40dcf9e6f13694a30b37ceab0a7f34b997e5f16378597359a49804","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":10,"exchangeOrderIdEth":"0xd75859725707baadd58688cd412e22c78452a2cc18126a7f2a54c36990de9975","giveTokenId":12,"receiveTokenId":12,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":11,"exchangeOrderIdEth":"0x98bd27f93b02fef8bd75bb7f6fd64bce804d7070253f0d24edabb9da2ed41eb1","giveTokenId":12,"receiveTokenId":12,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":12,"exchangeOrderIdEth":"0xbc5cc1376cafc4d7e26bfb6ec49c27c8958f2c5939d1ddf66f1a6129c5717e74","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":13,"exchangeOrderIdEth":"0x476ad1eb7bb4726fc03759af817dc27b290c85b40fdcbb8cfbf0c35191364be8","giveTokenId":12,"receiveTokenId":12,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":14,"exchangeOrderIdEth":"0xec2fdb863cadc43f344ae43408f406e17be69fab816f7f14c83cdc60c7263904","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":15,"exchangeOrderIdEth":"0x477e0597e36e3d658402d3006031d4d35c63ffbabe3f62fc270a8a89f9daca0c","giveTokenId":12,"receiveTokenId":12,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":16,"exchangeOrderIdEth":"0xbd48356230086910abbf4278d03cbbdb34545b5e82b12dacb937e4bd0f131804","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":17,"exchangeOrderIdEth":"0x5456c60044c2fee9f3944e14e7e460abde81b17cb8c39824ce459b95c1295aab","giveTokenId":12,"receiveTokenId":12,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":18,"exchangeOrderIdEth":"0xf5be2026e70dc0308559cb7964d4770c2d5590a6a462ef389e131babd5e80271","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":19,"exchangeOrderIdEth":"0x616375a7600f47de4a6a02e8e55cc4940acea4fff417dcb21d82c14543e7368e","giveTokenId":12,"receiveTokenId":12,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":20,"exchangeOrderIdEth":"0x98dcd9b95721f96744cd16a3ef5a637c899d473a095c1b117a10480084a9e6d7","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":21,"exchangeOrderIdEth":"0xe3dd21c0f871f8b18b5e8ccc685f112c390df0ea83df923ba58868e982685745","giveTokenId":12,"receiveTokenId":12,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":22,"exchangeOrderIdEth":"0xf9e549b3518a630807958daafe1cdd88ec7214699bf20042786cc8e6769db2e0","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":23,"exchangeOrderIdEth":"0x77f447a0767b72474ea814d8e148aed412c261eaaf09d993685d007f93970ff5","giveTokenId":12,"receiveTokenId":12,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":24,"exchangeOrderIdEth":"0xdaa2778067f295dbafa98b26c588aaeda79f2d2c0cf8a6885e72e0f241de1176","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":25,"exchangeOrderIdEth":"0x3dc4ee1625bb4da2a56af9461f1405c89cde70e91ddcec2b5446d1be61fb7df1","giveTokenId":12,"receiveTokenId":12,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":26,"exchangeOrderIdEth":"0xb760f968b299ea5bd00db73d06f63d9495079284cba6d81686a8fc664003204f","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":27,"exchangeOrderIdEth":"0xbc563a7f9d16d80cdfc34811838955ce4d2012af9baaaef931917fbc4626ea5f","giveTokenId":12,"receiveTokenId":12,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":28,"exchangeOrderIdEth":"0xa97e51e602ff050e6eead1dca95f33b8ce0a82f7bd99cc6b8b4b5573afdc054a","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":29,"exchangeOrderIdEth":"0x02657574de5b556943c2582c0a389f40fc4c58ee0e2ff9db2b94e36cd1eaf030","giveTokenId":12,"receiveTokenId":12,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":30,"exchangeOrderIdEth":"0x28f052d81601a8d8e3dd4220b1868eee15724e15d5d09f2289a5387139fb8ee4","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":31,"exchangeOrderIdEth":"0x1c800010a3df148c6833186319123a78b1b9ca83410730195e1fcae7a0ff9ea8","giveTokenId":12,"receiveTokenId":12,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":32,"exchangeOrderIdEth":"0xad94e33aa6256ba476be7e4db64f9d87eef52d166fd66c93e5974fdcc76ffb22","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":33,"exchangeOrderIdEth":"0x8a236d295cf234fcae034c1019b5c578deaffa656c6341e43208bdae551806c9","giveTokenId":12,"receiveTokenId":12,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":34,"exchangeOrderIdEth":"0x412c564230e3276e42f3fc3a7625cc89841291701033efa6a63339d1adcfd1af","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":35,"exchangeOrderIdEth":"0xa9aae583768c32ec5f5c0dc5d38c9163f81b1b9a650fed63f19755f8f69ef8df","giveTokenId":12,"receiveTokenId":12,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":36,"exchangeOrderIdEth":"0x2d5939c25431df96659b5f1180237d810c56fb3b95ed0ccf75a8aa8d0ee2f54d","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":37,"exchangeOrderIdEth":"0x614a0f6f85fb6a4dc99ca04c7d18e6e6b2ec51dbc26ff567244316f4909d80eb","giveTokenId":12,"receiveTokenId":12,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":38,"exchangeOrderIdEth":"0xf6d7d90d7f3a2b266d4f9ade0b6a6a20d631b5dfe64e89bb3f58a8fb964776a7","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":39,"exchangeOrderIdEth":"0xfe68c6db7dc11b5ace2de259e219e394bbede78ef4c660b15688b73742097510","giveTokenId":12,"receiveTokenId":12,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":40,"exchangeOrderIdEth":"0xaa5d47f9a8e57a1859f59410a13f12e46750e036ae638d311aff2d52a6e1f314","giveTokenId":1,"receiveTokenId":1,"giveAmount":"1000000000000000000","receiveAmount":"1000000000000000000","status":"PENDING"},{"id":49,"exchangeOrderIdEth":"0xa073de27e9cbaebde44b06b14bf4c540b2ae0712e7330c8a3337002494466168","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"33333333333333336000","status":"PENDING"},{"id":50,"exchangeOrderIdEth":"0x44e89b82b4dfd89a62570df150afc435445f696aeda9bd5f8d067a81a23ff0e8","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"33333333333333336000","status":"PENDING"},{"id":51,"exchangeOrderIdEth":"0x2651e2cc780b6e663151369e47f06daadb8bbb00d2c234dd5e4adc556200d987","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"33333333333333336000","status":"PENDING"},{"id":53,"exchangeOrderIdEth":"0x3327c516741ee3dc0f061d5ab1f8708bff57c15205955727c85a420eafca846a","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"33333333333333336000","status":"PENDING"},{"id":55,"exchangeOrderIdEth":"0x36f8e9c1660f64ace64259b1d8f9ef5b4df8160c81c88e19e680b7f5e78c3298","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"660000000","status":"PENDING"},{"id":56,"exchangeOrderIdEth":"0xfd6f408a0a1e5fe263120933ef232913e15a101e8dcb06fcd42f286ba3f2f25d","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"660000000","status":"PENDING"},{"id":57,"exchangeOrderIdEth":"0x2a67f9372f22e1a597212184b4ff1ad5162963662fde265acf9ac6132c7a9f28","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":58,"exchangeOrderIdEth":"0xc5ac70d890ee6f1a53a1b247b5eb65feec54e89446fd4249d1c8f0952dc6b77e","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"},{"id":59,"exchangeOrderIdEth":"0x608721735cc87bbb2e2a4dd95d62f1ab39c296ede0e47fbec9e2c1694b6c5118","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":60,"exchangeOrderIdEth":"0xd92b71bd8ba6a5f250018199972510de044b95d92d9744efed3f67efe4f17bc9","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":61,"exchangeOrderIdEth":"0xe96a749dcb80e904075f529cbe5b800c73a2ca4ca25438d6cef83ac927a9daeb","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"},{"id":62,"exchangeOrderIdEth":"0x9c6a9fbcb1e578d6d326f3fea8fb55e114b885fff552ea01d24a8f5dde39d14b","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":63,"exchangeOrderIdEth":"0xa9581272da2fbf5dbc7040a75d04d71461e3bf905ccd96bee72c8a2b86d9c56e","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"},{"id":64,"exchangeOrderIdEth":"0x131bcd426449055fc836522f4bd797905d8ad4c6ca6c22129f68e74e9f1ef159","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"},{"id":65,"exchangeOrderIdEth":"0x84bccfeef3be7b0b8f49484e3a5f066a6452d357e407c078505cd7b82b0c7d56","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"},{"id":66,"exchangeOrderIdEth":"0xefaae6371bd95baef9b072faa87f53b334644297779b3865bb9083fbde70f102","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"},{"id":67,"exchangeOrderIdEth":"0xa0c3150ae984b99c353e9b2266d35e25eb5be3d69de30c781cf3dbf80f4fe988","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":68,"exchangeOrderIdEth":"0x7df0f3c8d4c15f25fd9b8fb0912f419975e5920ab79075d1a193b482dff97207","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"},{"id":69,"exchangeOrderIdEth":"0x9b89a087a6d18ef5e6b62d25090246101981ee58697b3316bc03879a4cfa1060","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":70,"exchangeOrderIdEth":"0x287b37cbb489eab3e3bdda720b23d68d339c9346abd2dd5a164ca35ddad3364f","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":71,"exchangeOrderIdEth":"0x23c005d57de86e64a8c1301e886bf33de296005bcd4e81b8bd876465f34ed1ff","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"},{"id":72,"exchangeOrderIdEth":"0x5cad0c4357ab6efed306752d23c26b05fab1837b0bcf643cc6a4f83eb8615f1b","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":73,"exchangeOrderIdEth":"0x83f583200458e0a023e1d3939ceb51386fdb1306d124b412eb4987194644624c","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":74,"exchangeOrderIdEth":"0x4dfb86bc12636777b7742c834e05b25dbfbb165581edbd2deb980df7976c39fe","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":75,"exchangeOrderIdEth":"0x50be10757ae1f1e50424f314429a22f25ced9ac9b29dd4f109cbe303683e3fe1","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":76,"exchangeOrderIdEth":"0xf9fa6b9684adf5f9732ce7e2cdf0d8b03c47141dbe8dc22be9566a418c456432","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"},{"id":77,"exchangeOrderIdEth":"0x064cd6d4716f711ddbaffc6ede89f93b54e997e50ffc6d0e1aa6394cd4ea9843","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":78,"exchangeOrderIdEth":"0x39e02bc23eb8296ab45b9a3387ce5589cd183a55266f69d9981b6666a1c29a9c","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"},{"id":79,"exchangeOrderIdEth":"0xc32971835c8669ae07e62983e2a240897a7de2bb6e2b805965ae71b28b979d7a","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"},{"id":80,"exchangeOrderIdEth":"0x5fa71ce063da914c5cd5ae5c9ef7dd513edca3d757afba3c603073a5703eb100","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"},{"id":81,"exchangeOrderIdEth":"0xa6b16b956af1db770c0ce47b16df4dfd5ea88791a49fcdbaba0df2d46c867646","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"},{"id":82,"exchangeOrderIdEth":"0xd624019f74cd9c7f1dca03453c8852a7fe46400b9fed5a44233c4e151f971269","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":83,"exchangeOrderIdEth":"0x5c52e6c08788b13894f9badcc3b0741ac481af403cae452621bb458c9839eec3","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":84,"exchangeOrderIdEth":"0x7fa9ddeb6ca13cfc4fc73e192316985aa3451023c3cf34335706c19af380c53e","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":85,"exchangeOrderIdEth":"0x1905aeefac47d3e8d483aa2eb81f0c528f1caeb88bd23c114ace101810cd9344","giveTokenId":12,"receiveTokenId":1,"giveAmount":"22000000000000000000","receiveAmount":"616000000","status":"PENDING"},{"id":86,"exchangeOrderIdEth":"0xf3c6905c7e91e6dfbd62dd4749283ded9de5cd46fd05f3916eee95155c0ebf5e","giveTokenId":1,"receiveTokenId":12,"giveAmount":"1000000000","receiveAmount":"35714285714285715000","status":"PENDING"}]<br />
+                                [17:09:34.810532] ACTION: Status code: 200<br />
+                                [17:09:34.839687] ACTION: Token id from Response is '[3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 49, 50, 51, 53, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86]'<br />
+                                [17:09:34.840274] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.exchange.N_0044_CreateExchangeOrderWrapToTokenWithInvalidDataTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  createExchangeOrder
+      </td>
+  <td class="duration">
+    0.575s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:09:21.117052] Test is started<br />
+                                [17:09:21.69166] ACTION: Response body is {"message":"Price changed substantially! Please submit new exchange order."}<br />
+                                [17:09:21.691907] ACTION: Status code: 400<br />
+                                [17:09:21.69218] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.exchange.N_0045_CreateExchangeOrderTokenToWrapWithInvalidDataTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  createExchangeOrder
+      </td>
+  <td class="duration">
+    0.527s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:09:28.967487] Test is started<br />
+                                [17:09:29.4943] ACTION: Response body is {"message":"Price changed substantially! Please submit new exchange order."}<br />
+                                [17:09:29.494472] ACTION: Status code: 400<br />
+                                [17:09:29.494596] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.exchange.N_0046_CreateExchangeOrderTokenToWrapWithNegativeValuesTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  createExchangeOrder
+      </td>
+  <td class="duration">
+    0.283s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:09:40.584948] Test is started<br />
+                                [17:09:40.866856] ACTION: Response body is {"message":"To be given token amount is too small! You should give at least 0.0000000001"}<br />
+                                [17:09:40.86701] ACTION: Status code: 400<br />
+                                [17:09:40.86712] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.exchange.N_0047_CreateExchangeOrderTokenToWrapWithZeroValueTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  createExchangeOrder
+      </td>
+  <td class="duration">
+    0.346s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:09:41.621913] Test is started<br />
+                                [17:09:41.967568] ACTION: Response body is {"message":"To be given token amount is too small! You should give at least 0.0000000001"}<br />
+                                [17:09:41.967675] ACTION: Status code: 400<br />
+                                [17:09:41.96777] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.exchange.N_0048_CreateExchangeOrderWrapToWrapTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  createExchangeOrder
+      </td>
+  <td class="duration">
+    0.337s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:09:42.739541] Test is started<br />
+                                [17:09:43.07654] ACTION: Response body is {"message":"You cannot exchange token on itself"}<br />
+                                [17:09:43.07662] ACTION: Status code: 403<br />
+                                [17:09:43.076692] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.exchange.N_0049_CreateExchangeOrderTokenToTokenTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  createExchangeOrder
+      </td>
+  <td class="duration">
+    0.396s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:09:35.65732] Test is started<br />
+                                [17:09:36.052995] ACTION: Response body is {"message":"You cannot exchange token on itself"}<br />
+                                [17:09:36.053083] ACTION: Status code: 403<br />
+                                [17:09:36.053146] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.exchange.N_0053_CreateExchangeOrderWrapToTokenWithWethValueMoreThanUserWethBalanceTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  createExchangeOrder
+      </td>
+  <td class="duration">
+    0.564s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:09:22.812761] Test is started<br />
+                                [17:09:23.376567] ACTION: Response body is {"message":"To be given token amount is too large! You should give at most: 5.533086979512345678"}<br />
+                                [17:09:23.376697] ACTION: Status code: 400<br />
+                                [17:09:23.376814] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.exchange.N_0054_CreateExchangeOrderTokenToWrapWithTokenValueMoreThanUserWalletTokenBalanceTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  createExchangeOrder
+      </td>
+  <td class="duration">
+    0.622s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:09:39.218824] Test is started<br />
+                                [17:09:39.840177] ACTION: Response body is {"message":"To be given token amount is too large! You should give at most: 38.3994"}<br />
+                                [17:09:39.840263] ACTION: Status code: 400<br />
+                                [17:09:39.840332] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

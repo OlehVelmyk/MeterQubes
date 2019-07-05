@@ -61,9 +61,9 @@ public class N_0029_CreateExchangeOrderWrapToTokenTest {
                 .put("giveTokenId", 1)
                 .put("giveAmount", String.valueOf(wethValue))
                 .put("receiveTokenId", 12)
-                .put("receiveAmount", String.valueOf(wethValue/tokenValue));
+                .put("receiveAmount", String.valueOf(wethValue / tokenValue));
 
-        System.out.println("wethValue/tokenValue = " + wethValue/tokenValue);
+        System.out.println("wethValue/tokenValue = " + wethValue / tokenValue);
 
         RequestSpecification request = RestAssured.given()
                 .header("Content-Type", "application/json")
@@ -86,9 +86,12 @@ public class N_0029_CreateExchangeOrderWrapToTokenTest {
 
     @Test(dependsOnMethods = "createExchangeOrder")
     public void sendExchangeIdAndTransactionHashToBack() {
+        String hash = DataConverter.getHashValue(TransactionHash.getHash());
+        String transactionHash = hash + GenerateRandomDigits.generateRandomDigits();
+
         JSONObject requestParams = new JSONObject()
                 .put("exchangeOrderId", ExchangeOrderId.getExchangeOrderID())
-                .put("txHash", TransactionHash.getHash().replace("8659", GenerateRandomDigits.generateRandomDigits()));
+                .put("txHash", transactionHash);
 
         RequestSpecification request = RestAssured.given()
                 .header("Content-Type", "application/json")

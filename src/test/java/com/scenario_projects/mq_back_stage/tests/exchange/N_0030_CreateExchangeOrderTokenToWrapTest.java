@@ -86,10 +86,12 @@ public class N_0030_CreateExchangeOrderTokenToWrapTest {
 
     @Test(dependsOnMethods = "createExchangeOrder")
     public void sendExchangeIdAndTransactionHashToBack() {
+        String hash = DataConverter.getHashValue(TransactionHash.getHash());
+        String transactionHash = hash + GenerateRandomDigits.generateRandomDigits();
 
         JSONObject requestParams = new JSONObject()
                 .put("exchangeOrderId", ExchangeOrderId.getExchangeOrderID())
-                .put("txHash", TransactionHash.getHash().replace("8659", GenerateRandomDigits.generateRandomDigits()));
+                .put("txHash", transactionHash);
 
         RequestSpecification request = RestAssured.given()
                 .header("Content-Type", "application/json")

@@ -65,6 +65,7 @@ com/scenario_projects/mq_back_stage/tests/favorites/N_0016_DeleteMarketFromUserF
 com/scenario_projects/mq_back_stage/tests/users/N_0002_Authorization.class
 com/scenario_projects/mq_back_stage/tests/exchange/N_0035_FindExchangeOrdersByUserIdTest.class
 com/scenario_projects/mq_back_stage/tests/exchange/N_0031_GetExchangeOrderDataByOrderIdTest.class
+com/scenario_projects/mq_back_stage/actioHelpers/DataConverter.class
 com/scenario_projects/mq_back_stage/tests/orders/N_0027_FindUserOrdersTest.class
 com/scenario_projects/mq_back_stage/dataProvider/UserId.class
 com/scenario_projects/mq_back_stage/tests/markets/N_0004_FindAllMarketsTest.class
