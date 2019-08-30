@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Admin Bot"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="1.955">
+  <properties />
+  
+  
+            <testcase name="startBot" time="1.321" classname="com.scenario_projects.mq_back_stage.tests.adminBot.N_0040_StartAndStopBotTest" />
+                <testcase name="getBotData" time="0.312" classname="com.scenario_projects.mq_back_stage.tests.adminBot.N_0040_StartAndStopBotTest" />
+                <testcase name="stopBot" time="0.322" classname="com.scenario_projects.mq_back_stage.tests.adminBot.N_0040_StartAndStopBotTest" />
+      
+</testsuite>

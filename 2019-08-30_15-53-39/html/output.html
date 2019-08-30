@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Log Output</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+  </head>
+<body>
+  <h1>Log Output</h1>
+  <p>
+    Combined output from all calls to the log methods of the <a href="http://testng.org/javadocs/org/testng/Reporter.html">TestNG Reporter</a>.    
+  </p>
+
+  <div id="log">
+                  [15:53:42.240489] onStart method Users<br />
+                        [15:53:43.41042] ACTION: Response body is {"id":4,"nonce":"122NBVS49SCUBM3EJ3CZTR7sBVet_NT-aOv55OMdRZaIH_dNeOuxYjmH81KnMRQ8cY60HyKCSIfO5Qy9PJXylA","isAdmin":false}<br />
+                        [15:53:43.411227] ACTION: Status code: 200<br />
+                        [15:53:43.602301] ACTION: Nonce received from Response is '122NBVS49SCUBM3EJ3CZTR7sBVet_NT-aOv55OMdRZaIH_dNeOuxYjmH81KnMRQ8cY60HyKCSIfO5Qy9PJXylA'<br />
+                        [15:53:43.611986] ACTION: User Id from Response is '4'<br />
+                        [15:53:44.162002] ACTION: Response body is eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7ImlkIjo0LCJwdWJsaWNBZGRyZXNzIjoiMHg0RUM3ZTc1MzBlMjQ3YWEzMzQzQWE3QmMxN2UxNjc3OUE1NzU4ZTVjIn0sImlhdCI6MTU2NzE2OTYyNH0.lBE4Ue0CEHWPZgv1ggouWpcsR1XQyL3_MDkd6gBeRX4<br />
+                        [15:53:44.1634] ACTION: Status code: 200<br />
+                        [15:53:44.169834] onTestStart method findUserByUserId started<br />
+                        [15:53:44.466856] ACTION: Response body is {"id":4,"nonce":"-mHvPCZdugUwx3iquUJHxFNv14ehB85I2O1-mc9PMYp1GWHEcreL1rWXFfZt49k5oyKMq0FGUs4GKdkTDuv8gg","role":"CLIENT"}<br />
+                        [15:53:44.467794] ACTION: Status code: 200<br />
+                        [15:53:44.489822] ACTION: User Id from Response is '4'<br />
+                        [15:53:44.512304] ACTION: Role  from Response is 'CLIENT'<br />
+                        [15:53:44.519991] onTestSuccess method findUserByUserId succeeded<br />
+                        [15:53:44.525698] onTestStart method findUserByPublicAddress started<br />
+                        [15:53:44.845852] ACTION: Response body is {"id":4,"nonce":"-mHvPCZdugUwx3iquUJHxFNv14ehB85I2O1-mc9PMYp1GWHEcreL1rWXFfZt49k5oyKMq0FGUs4GKdkTDuv8gg","isAdmin":false}<br />
+                        [15:53:44.846593] ACTION: Status code: 200<br />
+                        [15:53:44.870207] ACTION: Nonce received from Response is '-mHvPCZdugUwx3iquUJHxFNv14ehB85I2O1-mc9PMYp1GWHEcreL1rWXFfZt49k5oyKMq0FGUs4GKdkTDuv8gg'<br />
+                        [15:53:44.888498] ACTION: User Id from Response is '4'<br />
+                        [15:53:44.890962] onTestSuccess method findUserByPublicAddress succeeded<br />
+                        [15:53:45.196878] ACTION: Response body is {"id":4,"nonce":"-mHvPCZdugUwx3iquUJHxFNv14ehB85I2O1-mc9PMYp1GWHEcreL1rWXFfZt49k5oyKMq0FGUs4GKdkTDuv8gg","isAdmin":false}<br />
+                        [15:53:45.19747] ACTION: Status code: 200<br />
+                        [15:53:45.219918] ACTION: Nonce received from Response is '-mHvPCZdugUwx3iquUJHxFNv14ehB85I2O1-mc9PMYp1GWHEcreL1rWXFfZt49k5oyKMq0FGUs4GKdkTDuv8gg'<br />
+                        [15:53:45.23691] ACTION: User Id from Response is '4'<br />
+                        [15:53:45.787315] ACTION: Response body is eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7ImlkIjo0LCJwdWJsaWNBZGRyZXNzIjoiMHg0RUM3ZTc1MzBlMjQ3YWEzMzQzQWE3QmMxN2UxNjc3OUE1NzU4ZTVjIn0sImlhdCI6MTU2NzE2OTYyNX0.S8VCh4HltBDDrE5TpN0sizKus2ST_i1A63mg2Lyv2zo<br />
+                        [15:53:45.787534] ACTION: Status code: 200<br />
+                        [15:53:45.788472] onTestStart method authorizationAgain started<br />
+                        [15:53:46.356458] ACTION: Response body is {"message":"Can't create token: UnauthorizedError: Signature verification failed"}<br />
+                        [15:53:46.357531] ACTION: Status code: 500<br />
+                        [15:53:46.381511] ACTION: 'Error message' parameter received from Response is 'Can't create token: UnauthorizedError: Signature verification failed'<br />
+                        [15:53:46.382075] onTestSuccess method authorizationAgain succeeded<br />
+                        [15:53:46.727094] ACTION: Response body is {"id":4,"nonce":"bJCyd6dyNF3oVSWAoCy8EQopxocl3wZB3j1jshSP6HjDapp8UoqNCAeUdBJbL92qSufPNbM4kC5YvN4QdQtyKw","isAdmin":false}<br />
+                        [15:53:46.727812] ACTION: Status code: 200<br />
+                        [15:53:46.746944] ACTION: Nonce received from Response is 'bJCyd6dyNF3oVSWAoCy8EQopxocl3wZB3j1jshSP6HjDapp8UoqNCAeUdBJbL92qSufPNbM4kC5YvN4QdQtyKw'<br />
+                        [15:53:46.757575] ACTION: User Id from Response is '4'<br />
+                        [15:53:46.758309] onTestStart method authorizationSuccessful started<br />
+                        [15:53:47.238379] ACTION: Response body is eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7ImlkIjo0LCJwdWJsaWNBZGRyZXNzIjoiMHg0RUM3ZTc1MzBlMjQ3YWEzMzQzQWE3QmMxN2UxNjc3OUE1NzU4ZTVjIn0sImlhdCI6MTU2NzE2OTYyN30.pc3qLVCg2sU-izEonxURgXz2xJLHCt1faAJ0r60UkPI<br />
+                        [15:53:47.238925] ACTION: Status code: 200<br />
+                        [15:53:47.239685] onTestSuccess method authorizationSuccessful succeeded<br />
+                        [15:53:47.240202] onFinish method Users<br />
+                        [15:53:47.241345] onStart method Markets<br />
+                        [15:53:47.57508] ACTION: Response body is {"id":4,"nonce":"D-1YylwyU3qoTTb_7wEDsxzF_ICQr1uNEdVdYtv_rbdeE7s5tSULq6r1HILaVMd35j4FN4e2AyN5-B8sILEVgQ","isAdmin":false}<br />
+                        [15:53:47.57569] ACTION: Status code: 200<br />
+                        [15:53:47.595413] ACTION: Nonce received from Response is 'D-1YylwyU3qoTTb_7wEDsxzF_ICQr1uNEdVdYtv_rbdeE7s5tSULq6r1HILaVMd35j4FN4e2AyN5-B8sILEVgQ'<br />
+                        [15:53:47.609936] ACTION: User Id from Response is '4'<br />
+                        [15:53:48.073322] ACTION: Response body is eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7ImlkIjo0LCJwdWJsaWNBZGRyZXNzIjoiMHg0RUM3ZTc1MzBlMjQ3YWEzMzQzQWE3QmMxN2UxNjc3OUE1NzU4ZTVjIn0sImlhdCI6MTU2NzE2OTYyOH0.wpRd0Qo8xqCBtApRYdjlCZUUswDG60KBwBdfBX9NMW4<br />
+                        [15:53:48.074025] ACTION: Status code: 200<br />
+                        [15:53:48.075085] onTestStart method getMarketsByMarketId started<br />
+                        [15:53:48.454823] ACTION: Response body is {"id":11,"tokens":"EMPR-WETH","baseToken":"EMPR","baseTokenProjectUrl":"http://empowr.com/","baseTokenName":"empowr orange","baseTokenDecimals":18,"baseTokenAddress":"0xdaf16fad57bc1d43a57695d1e724013ebe8e154a","quoteToken":"WETH","quoteTokenDecimals":18,"quoteTokenAddress":"0x251bbfa0abf2dc356a44f7af5e4d7a224a4ec01f","minOrderSize":"0.000100000000000000","pricePrecision":5,"priceDecimals":11,"amountDecimals":4,"asMakerFeeRate":"0.00100","asTakerFeeRate":"0.00300","supportedOrderTypes":["LIMIT","MARKET"],"marketOrderMaxSlippage":"0.20000"}<br />
+                        [15:53:48.455437] ACTION: Status code: 200<br />
+                        [15:53:48.483976] ACTION: 'id' parameter received from Response is 11<br />
+                        [15:53:48.484522] onTestSuccess method getMarketsByMarketId succeeded<br />
+                        [15:53:48.485574] onTestStart method getAllMarkets started<br />
+                        [15:53:48.787348] ACTION: Response body is [{"id":1,"tokens":"BNB-WETH","baseToken":"BNB","baseTokenProjectUrl":"https://www.binance.com/","baseTokenName":"Binance Coin","baseTokenDecimals":18,"baseTokenAddress":"0xb8c77482e45f1f44de1745f52c74426c631bdd52","quoteToken":"WETH","quoteTokenDecimals":18,"quoteTokenAddress":"0x251bbfa0abf2dc356a44f7af5e4d7a224a4ec01f","minOrderSize":"0.000100000000000000","pricePrecision":5,"priceDecimals":8,"amountDecimals":4,"asMakerFeeRate":"0.00100","asTakerFeeRate":"0.00300","supportedOrderTypes":["LIMIT"],"marketOrderMaxSlippage":"0.10000"},{"id":2,"tokens":"MKR-WETH","baseToken":"MKR","baseTokenProjectUrl":"https://makerdao.com/","baseTokenName":"Maker","baseTokenDecimals":18,"baseTokenAddress":"0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2","quoteToken":"WETH","quoteTokenDecimals":18,"quoteTokenAddress":"0x251bbfa0abf2dc356a44f7af5e4d7a224a4ec01f","minOrderSize":"0.005000000000000000","pricePrecision":5,"priceDecimals":8,"amountDecimals":2,"asMakerFeeRate":"0.00100","asTakerFeeRate":"0.00300","supportedOrderTypes":["LIMIT"],"marketOrderMaxSlippage":"0.10000"},{"id":3,"tokens":"OMG-WETH","baseToken":"OMG","baseTokenProjectUrl":"https://omisego.network/","baseTokenName":"OmiseGo","baseTokenDecimals":18,"baseTokenAddress":"0xd26114cd6ee289accf82350c8d8487fedb8a0c07","quoteToken":"WETH","quoteTokenDecimals":18,"quoteTokenAddress":"0x251bbfa0abf2dc356a44f7af5e4d7a224a4ec01f","minOrderSize":"0.300000000000000000","pricePrecision":5,"priceDecimals":8,"amountDecimals":2,"asMakerFeeRate":"0.00100","asTakerFeeRate":"0.00300","supportedOrderTypes":["LIMIT"],"marketOrderMaxSlippage":"0.10000"},{"id":4,"tokens":"ZRX-WETH","baseToken":"ZRX","baseTokenProjectUrl":"https://0x.org/","baseTokenName":"0x Protocol Token","baseTokenDecimals":18,"baseTokenAddress":"0x2a88cf7785e89c7c8bf26d4429b965619dada7e3","quoteToken":"WETH","quoteTokenDecimals":18,"quoteTokenAddress":"0x251bbfa0abf2dc356a44f7af5e4d7a224a4ec01f","minOrderSize":"20.000000000000000000","pricePrecision":5,"priceDecimals":8,"amountDecimals":2,"asMakerFeeRate":"0.00100","asTakerFeeRate":"0.00300","supportedOrderTypes":["LIMIT","MARKET"],"marketOrderMaxSlippage":"0.10000"},{"id":5,"tokens":"BAT-WETH","baseToken":"BAT","baseTokenProjectUrl":"https://basicattentiontoken.org/","baseTokenName":"Basic Attention Token","baseTokenDecimals":18,"baseTokenAddress":"0x0d8775f648430679a709e98d2b0cb6250d2887ef","quoteToken":"WETH","quoteTokenDecimals":18,"quoteTokenAddress":"0x251bbfa0abf2dc356a44f7af5e4d7a224a4ec01f","minOrderSize":"20.000000000000000000","pricePrecision":5,"priceDecimals":8,"amountDecimals":2,"asMakerFeeRate":"0.00100","asTakerFeeRate":"0.00300","supportedOrderTypes":["LIMIT","MARKET"],"marketOrderMaxSlippage":"0.10000"},{"id":6,"tokens":"WTC-WETH","baseToken":"WTC","baseTokenProjectUrl":"http://www.waltonchain.org/","baseTokenName":"Walton","baseTokenDecimals":18,"baseTokenAddress":"0xb7cb1c96db6b22b0d3d9536e0108d062bd488f74","quoteToken":"WETH","quoteTokenDecimals":18,"quoteTokenAddress":"0x251bbfa0abf2dc356a44f7af5e4d7a224a4ec01f","minOrderSize":"1.000000000000000000","pricePrecision":5,"priceDecimals":6,"amountDecimals":2,"asMakerFeeRate":"0.00100","asTakerFeeRate":"0.00300","supportedOrderTypes":["LIMIT"],"marketOrderMaxSlippage":"0.10000"},{"id":7,"tokens":"KCS-WETH","baseToken":"KCS","baseTokenProjectUrl":"https://www.kucoin.com/","baseTokenName":"KuCoin Shares","baseTokenDecimals":18,"baseTokenAddress":"0x039b5649a59967e3e936d7471f9c3700100ee1ab","quoteToken":"WETH","quoteTokenDecimals":18,"quoteTokenAddress":"0x251bbfa0abf2dc356a44f7af5e4d7a224a4ec01f","minOrderSize":"1.000000000000000000","pricePrecision":5,"priceDecimals":8,"amountDecimals":2,"asMakerFeeRate":"0.00100","asTakerFeeRate":"0.00300","supportedOrderTypes":["LIMIT"],"marketOrderMaxSlippage":"0.20000"},{"id":8,"tokens":"LINK-WETH","baseToken":"LINK","baseTokenProjectUrl":"https://link.smartcontract.com/","baseTokenName":"ChainLink Token","baseTokenDecimals":18,"baseTokenAddress":"0x514910771af9ca656af840dff83e8264ecf986ca","quoteToken":"WETH","quoteTokenDecimals":18,"quoteTokenAddress":"0x251bbfa0abf2dc356a44f7af5e4d7a224a4ec01f","minOrderSize":"50.000000000000000000","pricePrecision":4,"priceDecimals":7,"amountDecimals":2,"asMakerFeeRate":"0.00100","asTakerFeeRate":"0.00300","supportedOrderTypes":["LIMIT"],"marketOrderMaxSlippage":"0.10000"},{"id":9,"tokens":"HOT-WETH","baseToken":"HOT","baseTokenProjectUrl":"https://thehydrofoundation.com/","baseTokenName":"Hydro Protocol","baseTokenDecimals":18,"baseTokenAddress":"0x9af839687f6c94542ac5ece2e317daae355493a1","quoteToken":"WETH","quoteTokenDecimals":18,"quoteTokenAddress":"0x251bbfa0abf2dc356a44f7af5e4d7a224a4ec01f","minOrderSize":"1000.000000000000000000","pricePrecision":5,"priceDecimals":8,"amountDecimals":0,"asMakerFeeRate":"0.00100","asTakerFeeRate":"0.00300","supportedOrderTypes":["LIMIT","MARKET"],"marketOrderMaxSlippage":"0.10000"},{"id":10,"tokens":"ENJ-WETH","baseToken":"ENJ","baseTokenProjectUrl":"https://enjincoin.io/","baseTokenName":"Enjin Coin","baseTokenDecimals":18,"baseTokenAddress":"0x7e534b4192daeaa6559c08c7147364b00a7ce697","quoteToken":"WETH","quoteTokenDecimals":18,"quoteTokenAddress":"0x251bbfa0abf2dc356a44f7af5e4d7a224a4ec01f","minOrderSize":"1.000000000000000000","pricePrecision":5,"priceDecimals":8,"amountDecimals":2,"asMakerFeeRate":"0.00100","asTakerFeeRate":"0.00300","supportedOrderTypes":["LIMIT","MARKET"],"marketOrderMaxSlippage":"0.10000"},{"id":11,"tokens":"EMPR-WETH","baseToken":"EMPR","baseTokenProjectUrl":"http://empowr.com/","baseTokenName":"empowr orange","baseTokenDecimals":18,"baseTokenAddress":"0xdaf16fad57bc1d43a57695d1e724013ebe8e154a","quoteToken":"WETH","quoteTokenDecimals":18,"quoteTokenAddress":"0x251bbfa0abf2dc356a44f7af5e4d7a224a4ec01f","minOrderSize":"0.000100000000000000","pricePrecision":5,"priceDecimals":11,"amountDecimals":4,"asMakerFeeRate":"0.00100","asTakerFeeRate":"0.00300","supportedOrderTypes":["LIMIT","MARKET"],"marketOrderMaxSlippage":"0.20000"}]<br />
+                        [15:53:48.788787] ACTION: Status code: 200<br />
+                        [15:53:48.789789] onTestSuccess method getAllMarkets succeeded<br />
+                        [15:53:48.791215] onTestStart method getMarketsByTokenSymbols started<br />
+                        [15:53:49.106815] ACTION: Response body is [{"id":11,"tokens":"EMPR-WETH","baseToken":"EMPR","baseTokenProjectUrl":"http://empowr.com/","baseTokenName":"empowr orange","baseTokenDecimals":18,"baseTokenAddress":"0xdaf16fad57bc1d43a57695d1e724013ebe8e154a","quoteToken":"WETH","quoteTokenDecimals":18,"quoteTokenAddress":"0x251bbfa0abf2dc356a44f7af5e4d7a224a4ec01f","minOrderSize":"0.000100000000000000","pricePrecision":5,"priceDecimals":11,"amountDecimals":4,"asMakerFeeRate":"0.00100","asTakerFeeRate":"0.00300","supportedOrderTypes":["LIMIT","MARKET"],"marketOrderMaxSlippage":"0.20000"}]<br />
+                        [15:53:49.107495] ACTION: Status code: 200<br />
+                        [15:53:49.130489] ACTION: Token name received from Response is EMPR<br />
+                        [15:53:49.13101] onTestSuccess method getMarketsByTokenSymbols succeeded<br />
+            </div>
+
+</body>
+</html>

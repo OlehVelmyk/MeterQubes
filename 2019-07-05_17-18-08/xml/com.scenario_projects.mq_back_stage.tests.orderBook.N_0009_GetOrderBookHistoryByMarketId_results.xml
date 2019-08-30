@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Order Book"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.362">
+  <properties />
+  
+  
+            <testcase name="getOrderBookHistoryByMarketId" time="0.362" classname="com.scenario_projects.mq_back_stage.tests.orderBook.N_0009_GetOrderBookHistoryByMarketId" />
+      
+</testsuite>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Users"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.365">
+  <properties />
+  
+  
+            <testcase name="findUserByPublicAddress" time="0.365" classname="com.scenario_projects.mq_back_stage.tests.users.N_0001_FindUserByPublicAddressTest" />
+      
+</testsuite>

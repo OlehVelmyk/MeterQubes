@@ -1,6 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Meter Qubes Back Stage Tests" verbose="1" parallel="none">
+    <listeners>
+        <listener class-name="com.scenario_projects.mq_back_stage.logging.TestListener" />
+    </listeners>
+
     <test name="Users">
         <packages>
             <package name="com.scenario_projects.mq_back_stage.tests.users"/>
@@ -11,7 +15,7 @@
             <package name="com.scenario_projects.mq_back_stage.tests.markets"/>
         </packages>
     </test>
-    <test name="Data">
+   <!-- <test name="Data">
         <packages>
             <package name="com.scenario_projects.mq_back_stage.tests.data"/>
         </packages>
@@ -60,5 +64,5 @@
         <packages>
             <package name="com.scenario_projects.mq_back_stage.tests.exchange"/>
         </packages>
-    </test>
+    </test>-->
 </suite>

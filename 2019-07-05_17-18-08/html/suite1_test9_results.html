@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Admin panel</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Admin panel</h1>
+<p>
+  Test duration: 5.542s
+</p>
+
+
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.admin.N_0018_GetUsersWalletsTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  getUsersWallets
+      </td>
+  <td class="duration">
+    0.287s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:18:30.233122] Test is started<br />
+                                [17:18:30.503738] ACTION: Response body is {"totalAddresses":5,"page":1,"totalPages":1,"addresses":["0x96241186ca4aa79f5bd593a02c29a38da785251e","0xa80ff08d08809b29c733135b1b93a07799e5d17f","0x7683ddb7451d684d320baf7aabcd0298a8c941da","0x4ec7e7530e247aa3343aa7bc17e16779a5758e5c","0xb4b0145fe5a020d855e827a0630500f2a849dade"]}<br />
+                                [17:18:30.503839] ACTION: Status code: 200<br />
+                                [17:18:30.508129] ACTION: 'totalAddresses' parameter received from Response is 5<br />
+                                [17:18:30.512232] ACTION: 'page' parameter received from Response is 1<br />
+                                [17:18:30.515978] ACTION: 'totalPages' parameter received from Response is 1<br />
+                                [17:18:30.52022] ACTION: 'addresses' parameter received from Response is [0x96241186ca4aa79f5bd593a02c29a38da785251e, 0xa80ff08d08809b29c733135b1b93a07799e5d17f, 0x7683ddb7451d684d320baf7aabcd0298a8c941da, 0x4ec7e7530e247aa3343aa7bc17e16779a5758e5c, 0xb4b0145fe5a020d855e827a0630500f2a849dade]<br />
+                                [17:18:30.520355] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.admin.N_0019_GetAdminTransactionListTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  getAdminTransactionList
+      </td>
+  <td class="duration">
+    0.347s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:18:28.914807] Test is started<br />
+                                [17:18:29.246976] ACTION: Response body is {"transactions":[{"id":14,"amount":"4.5e-9","price":"33333333333.333333333","side":"EXCHANGE","tokens":"ETH-EMPR","takerWallet":"0xb4b0145fe5a020d855e827a0630500f2a849dade","createdAt":"2019-07-04T13:36:28+00:00"},{"id":13,"amount":"4.5e-9","price":"33333333333.333333333","side":"EXCHANGE","tokens":"ETH-EMPR","takerWallet":"0xb4b0145fe5a020d855e827a0630500f2a849dade","createdAt":"2019-07-04T13:27:35+00:00"},{"id":11,"amount":"20","price":"0.000000000","side":"EXCHANGE","tokens":"EMPR-ETH","takerWallet":"0xb4b0145fe5a020d855e827a0630500f2a849dade","createdAt":"2019-07-04T12:59:48+00:00"},{"id":10,"amount":"20","price":"0.000000000","side":"EXCHANGE","tokens":"EMPR-ETH","takerWallet":"0xb4b0145fe5a020d855e827a0630500f2a849dade","createdAt":"2019-07-04T12:56:31+00:00"},{"id":9,"amount":"5e-10","price":"33333333333.333336000","side":"EXCHANGE","tokens":"ETH-EMPR","takerWallet":"0xb4b0145fe5a020d855e827a0630500f2a849dade","createdAt":"2019-07-04T12:53:55+00:00"},{"id":4,"amount":"0.0001","price":"0.356000000","side":"SELL","tokens":"EMPR-WETH","takerWallet":"0x96241186ca4aa79f5bd593a02c29a38da785251e","createdAt":"2019-06-25T05:50:33+00:00"},{"id":4,"amount":"0.0009","price":"0.450000000","side":"SELL","tokens":"EMPR-WETH","takerWallet":"0x96241186ca4aa79f5bd593a02c29a38da785251e","createdAt":"2019-06-25T05:50:33+00:00"},{"id":2,"amount":"0.0009","price":"0.500000000","side":"SELL","tokens":"EMPR-WETH","takerWallet":"0x96241186ca4aa79f5bd593a02c29a38da785251e","createdAt":"2019-06-25T05:44:33+00:00"},{"id":6,"amount":"0.0007","price":"0.350000000","side":"SELL","tokens":"EMPR-WETH","takerWallet":"0x96241186ca4aa79f5bd593a02c29a38da785251e","createdAt":"2019-06-24T06:50:33+00:00"},{"id":3,"amount":"0.005","price":"5.000000000","side":"BUY","tokens":"EMPR-WETH","takerWallet":"0x96241186ca4aa79f5bd593a02c29a38da785251e","createdAt":"2019-06-23T05:50:33+00:00"},{"id":5,"amount":"0.0007","price":"0.350000000","side":"SELL","tokens":"EMPR-WETH","takerWallet":"0x96241186ca4aa79f5bd593a02c29a38da785251e","createdAt":"2019-06-21T05:50:33+00:00"},{"id":1,"amount":"0.001","price":"0.500000000","side":"SELL","tokens":"EMPR-WETH","takerWallet":"0x96241186ca4aa79f5bd593a02c29a38da785251e","createdAt":"2019-06-19T05:50:33+00:00"},{"id":7,"amount":"0.01","price":"2.000000000","side":"EXCHANGE","tokens":"ETH-EMPR","takerWallet":"0x7683ddb7451d684d320baf7aabcd0298a8c941da","createdAt":"2019-05-08T11:56:00+00:00"},{"id":8,"amount":"0.03","price":"2.000000000","side":"EXCHANGE","tokens":"ETH-EMPR","takerWallet":"0x7683ddb7451d684d320baf7aabcd0298a8c941da","createdAt":"2019-04-30T12:05:00+00:00"}]}<br />
+                                [17:18:29.247089] ACTION: Status code: 200<br />
+                                [17:18:29.26184] ACTION: 'transactions' parameter received from Response is [[createdAt:2019-07-04T13:36:28+00:00, amount:4.5e-9, side:EXCHANGE, price:33333333333.333333333, tokens:ETH-EMPR, id:14, takerWallet:0xb4b0145fe5a020d855e827a0630500f2a849dade], [createdAt:2019-07-04T13:27:35+00:00, amount:4.5e-9, side:EXCHANGE, price:33333333333.333333333, tokens:ETH-EMPR, id:13, takerWallet:0xb4b0145fe5a020d855e827a0630500f2a849dade], [createdAt:2019-07-04T12:59:48+00:00, amount:20, side:EXCHANGE, price:0.000000000, tokens:EMPR-ETH, id:11, takerWallet:0xb4b0145fe5a020d855e827a0630500f2a849dade], [createdAt:2019-07-04T12:56:31+00:00, amount:20, side:EXCHANGE, price:0.000000000, tokens:EMPR-ETH, id:10, takerWallet:0xb4b0145fe5a020d855e827a0630500f2a849dade], [createdAt:2019-07-04T12:53:55+00:00, amount:5e-10, side:EXCHANGE, price:33333333333.333336000, tokens:ETH-EMPR, id:9, takerWallet:0xb4b0145fe5a020d855e827a0630500f2a849dade], [createdAt:2019-06-25T05:50:33+00:00, amount:0.0001, side:SELL, price:0.356000000, tokens:EMPR-WETH, id:4, takerWallet:0x96241186ca4aa79f5bd593a02c29a38da785251e], [createdAt:2019-06-25T05:50:33+00:00, amount:0.0009, side:SELL, price:0.450000000, tokens:EMPR-WETH, id:4, takerWallet:0x96241186ca4aa79f5bd593a02c29a38da785251e], [createdAt:2019-06-25T05:44:33+00:00, amount:0.0009, side:SELL, price:0.500000000, tokens:EMPR-WETH, id:2, takerWallet:0x96241186ca4aa79f5bd593a02c29a38da785251e], [createdAt:2019-06-24T06:50:33+00:00, amount:0.0007, side:SELL, price:0.350000000, tokens:EMPR-WETH, id:6, takerWallet:0x96241186ca4aa79f5bd593a02c29a38da785251e], [createdAt:2019-06-23T05:50:33+00:00, amount:0.005, side:BUY, price:5.000000000, tokens:EMPR-WETH, id:3, takerWallet:0x96241186ca4aa79f5bd593a02c29a38da785251e], [createdAt:2019-06-21T05:50:33+00:00, amount:0.0007, side:SELL, price:0.350000000, tokens:EMPR-WETH, id:5, takerWallet:0x96241186ca4aa79f5bd593a02c29a38da785251e], [createdAt:2019-06-19T05:50:33+00:00, amount:0.001, side:SELL, price:0.500000000, tokens:EMPR-WETH, id:1, takerWallet:0x96241186ca4aa79f5bd593a02c29a38da785251e], [createdAt:2019-05-08T11:56:00+00:00, amount:0.01, side:EXCHANGE, price:2.000000000, tokens:ETH-EMPR, id:7, takerWallet:0x7683ddb7451d684d320baf7aabcd0298a8c941da], [createdAt:2019-04-30T12:05:00+00:00, amount:0.03, side:EXCHANGE, price:2.000000000, tokens:ETH-EMPR, id:8, takerWallet:0x7683ddb7451d684d320baf7aabcd0298a8c941da]]<br />
+                                [17:18:29.261978] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.admin.N_0020_GetTradeFeesTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  getTradeFees
+      </td>
+  <td class="duration">
+    0.302s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:18:33.024049] Test is started<br />
+                                [17:18:33.300464] ACTION: Response body is {"asMakerFeeRate":"3.904","asTakerFeeRate":"0.926"}<br />
+                                [17:18:33.300763] ACTION: Status code: 200<br />
+                                [17:18:33.313579] ACTION: 'asMakerFeeRate' parameter received from Response is 3.904<br />
+                                [17:18:33.325591] ACTION: 'asTakerFeeRate' parameter received from Response is 0.926<br />
+                                [17:18:33.326245] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.admin.N_0021_UpdateTradeFeesTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  updateTradeFees
+      </td>
+  <td class="duration">
+    0.332s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:18:32.067591] Test is started<br />
+                                [17:18:32.39929] ACTION: Response body is <br />
+                                [17:18:32.399538] ACTION: Status code: 204<br />
+                                [17:18:32.399795] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.admin.N_0022_AddNewTokenTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  addNewToken
+      </td>
+  <td class="duration">
+    0.352s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:18:29.880774] Test is started<br />
+                                [17:18:30.15401] ACTION: Response body is {"id":118,"tokens":"TEST171829881-WETH","quoteToken":"WETH","quoteTokenDecimals":18,"quoteTokenAddress":"0x251bbfa0abf2dc356a44f7af5e4d7a224a4ec01f","asMakerFeeRate":"0.08223","asTakerFeeRate":"0.05708","supportedOrderTypes":["LIMIT"],"pricePrecision":5,"baseTokenDecimals":18,"minOrderSize":"1.01","baseToken":"TEST171829881","baseTokenProjectUrl":"https://ropsten.etherscan.io","baseTokenAddress":"0xdaf16fad57bc1d43a57695d1e724013171829881","priceDecimals":8,"amountDecimals":2,"marketOrderMaxSlippage":"0.20000","baseTokenName":"My token","updatedAt":"2019-07-05T14:18:30.128Z","createdAt":"2019-07-05T14:18:30.128Z"}<br />
+                                [17:18:30.15477] ACTION: Status code: 200<br />
+                                [17:18:30.168729] ACTION: 'id' parameter received from Response is 118<br />
+                                [17:18:30.179454] ACTION: 'amountDecimals' parameter received from Response is 2<br />
+                                [17:18:30.186571] ACTION: 'baseToken' parameter received from Response is TEST171829881<br />
+                                [17:18:30.192112] ACTION: 'baseTokenAddress' parameter received from Response is 0xdaf16fad57bc1d43a57695d1e724013171829881<br />
+                                [17:18:30.197043] ACTION: 'baseTokenDecimals' parameter received from Response is 18<br />
+                                [17:18:30.201369] ACTION: 'baseTokenName' parameter received from Response is My token<br />
+                                [17:18:30.205187] ACTION: 'baseTokenProjectUrl' parameter received from Response is https://ropsten.etherscan.io<br />
+                                [17:18:30.208772] ACTION: 'marketOrderMaxSlippage' parameter received from Response is 0.20000<br />
+                                [17:18:30.212815] ACTION: 'minOrderSize' parameter received from Response is 1.01<br />
+                                [17:18:30.21723] ACTION: 'priceDecimals' parameter received from Response is 8<br />
+                                [17:18:30.220946] ACTION: 'pricePrecision' parameter received from Response is 5<br />
+                                [17:18:30.224683] ACTION: 'supportedOrderTypes' parameter received from Response is LIMIT<br />
+                                [17:18:30.228604] ACTION: 'asMakerFeeRate' parameter received from Response is 0.08223<br />
+                                [17:18:30.23261] ACTION: 'asTakerFeeRate' parameter received from Response is 0.05708<br />
+                                [17:18:30.232842] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.admin.N_0024_AddNewTokenWithNotUniqueTokenNameTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  checkAddNewTokenWithNotUniqueTokenName
+      </td>
+  <td class="duration">
+    0.292s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:18:30.868735] Test is started<br />
+                                [17:18:31.15979] ACTION: Response body is {"name":"SequelizeUniqueConstraintError","errors":[{"message":"tokens must be unique.","type":"unique violation","path":"tokens","value":"TEST171830520-WETH","origin":"DB","instance":{"id":null,"tokens":"TEST171830520-WETH","quoteToken":"WETH","quoteTokenDecimals":18,"quoteTokenAddress":"0x251bbfa0abf2dc356a44f7af5e4d7a224a4ec01f","asMakerFeeRate":"0.08223","asTakerFeeRate":"0.05708","supportedOrderTypes":["LIMIT"],"pricePrecision":5,"baseTokenDecimals":18,"minOrderSize":"1.01","baseToken":"TEST171830520","baseTokenProjectUrl":"https://ropsten.etherscan.io","baseTokenAddress":"0xdaf16fad57bc1d43a57695d1e724013171830520","priceDecimals":8,"amountDecimals":2,"marketOrderMaxSlippage":"0.20000","baseTokenName":"My token","updatedAt":"2019-07-05T14:18:31.123Z","createdAt":"2019-07-05T14:18:31.123Z"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"fields":{"tokens":"TEST171830520-WETH"},"parent":{"name":"error","length":216,"severity":"ERROR","code":"23505","detail":"Key (tokens)=(TEST171830520-WETH) already exists.","schema":"public","table":"market","constraint":"market_tokens_key","file":"nbtinsert.c","line":"434","routine":"_bt_check_unique","sql":"INSERT INTO \"market\" (\"id\",\"tokens\",\"baseToken\",\"baseTokenProjectUrl\",\"baseTokenName\",\"baseTokenDecimals\",\"baseTokenAddress\",\"quoteToken\",\"quoteTokenDecimals\",\"quoteTokenAddress\",\"minOrderSize\",\"pricePrecision\",\"priceDecimals\",\"amountDecimals\",\"asMakerFeeRate\",\"asTakerFeeRate\",\"supportedOrderTypes\",\"marketOrderMaxSlippage\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,'TEST171830520-WETH','TEST171830520','https://ropsten.etherscan.io','My token',18,'0xdaf16fad57bc1d43a57695d1e724013171830520','WETH',18,'0x251bbfa0abf2dc356a44f7af5e4d7a224a4ec01f','1.01',5,8,2,'0.08223','0.05708',ARRAY['LIMIT']::\"enum_market_supportedOrderTypes\"[],'0.20000','2019-07-05 14:18:31.123 +00:00','2019-07-05 14:18:31.123 +00:00') RETURNING *;"},"original":{"name":"error","length":216,"severity":"ERROR","code":"23505","detail":"Key (tokens)=(TEST171830520-WETH) already exists.","schema":"public","table":"market","constraint":"market_tokens_key","file":"nbtinsert.c","line":"434","routine":"_bt_check_unique","sql":"INSERT INTO \"market\" (\"id\",\"tokens\",\"baseToken\",\"baseTokenProjectUrl\",\"baseTokenName\",\"baseTokenDecimals\",\"baseTokenAddress\",\"quoteToken\",\"quoteTokenDecimals\",\"quoteTokenAddress\",\"minOrderSize\",\"pricePrecision\",\"priceDecimals\",\"amountDecimals\",\"asMakerFeeRate\",\"asTakerFeeRate\",\"supportedOrderTypes\",\"marketOrderMaxSlippage\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,'TEST171830520-WETH','TEST171830520','https://ropsten.etherscan.io','My token',18,'0xdaf16fad57bc1d43a57695d1e724013171830520','WETH',18,'0x251bbfa0abf2dc356a44f7af5e4d7a224a4ec01f','1.01',5,8,2,'0.08223','0.05708',ARRAY['LIMIT']::\"enum_market_supportedOrderTypes\"[],'0.20000','2019-07-05 14:18:31.123 +00:00','2019-07-05 14:18:31.123 +00:00') RETURNING *;"},"sql":"INSERT INTO \"market\" (\"id\",\"tokens\",\"baseToken\",\"baseTokenProjectUrl\",\"baseTokenName\",\"baseTokenDecimals\",\"baseTokenAddress\",\"quoteToken\",\"quoteTokenDecimals\",\"quoteTokenAddress\",\"minOrderSize\",\"pricePrecision\",\"priceDecimals\",\"amountDecimals\",\"asMakerFeeRate\",\"asTakerFeeRate\",\"supportedOrderTypes\",\"marketOrderMaxSlippage\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,'TEST171830520-WETH','TEST171830520','https://ropsten.etherscan.io','My token',18,'0xdaf16fad57bc1d43a57695d1e724013171830520','WETH',18,'0x251bbfa0abf2dc356a44f7af5e4d7a224a4ec01f','1.01',5,8,2,'0.08223','0.05708',ARRAY['LIMIT']::\"enum_market_supportedOrderTypes\"[],'0.20000','2019-07-05 14:18:31.123 +00:00','2019-07-05 14:18:31.123 +00:00') RETURNING *;"}<br />
+                                [17:18:31.160147] ACTION: Status code: 500<br />
+                                [17:18:31.160806] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.admin.N_0025_AddNewTokenWithNotUniqueBaseTokenUrlTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  checkAddNewTokenWithNotUniqueBaseTokenUrl
+      </td>
+  <td class="duration">
+    0.285s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:18:31.782038] Test is started<br />
+                                [17:18:32.067098] ACTION: Response body is {"name":"SequelizeUniqueConstraintError","errors":[{"message":"baseTokenAddress must be unique","type":"unique violation","path":"baseTokenAddress","value":"0xdaf16fad57bc1d43a57695d1e724013171831491","origin":"DB","instance":{"id":null,"tokens":"TEST171831782-WETH","quoteToken":"WETH","quoteTokenDecimals":18,"quoteTokenAddress":"0x251bbfa0abf2dc356a44f7af5e4d7a224a4ec01f","asMakerFeeRate":"0.08223","asTakerFeeRate":"0.05708","supportedOrderTypes":["LIMIT"],"pricePrecision":5,"baseTokenDecimals":18,"minOrderSize":"1.01","baseToken":"TEST171831782","baseTokenProjectUrl":"https://ropsten.etherscan.io","baseTokenAddress":"0xdaf16fad57bc1d43a57695d1e724013171831491","priceDecimals":8,"amountDecimals":2,"marketOrderMaxSlippage":"0.20000","baseTokenName":"My token","updatedAt":"2019-07-05T14:18:32.028Z","createdAt":"2019-07-05T14:18:32.028Z"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}],"fields":{"baseTokenAddress":"0xdaf16fad57bc1d43a57695d1e724013171831491"},"parent":{"name":"error","length":272,"severity":"ERROR","code":"23505","detail":"Key (\"baseTokenAddress\")=(0xdaf16fad57bc1d43a57695d1e724013171831491) already exists.","schema":"public","table":"market","constraint":"market_baseTokenAddress_key","file":"nbtinsert.c","line":"434","routine":"_bt_check_unique","sql":"INSERT INTO \"market\" (\"id\",\"tokens\",\"baseToken\",\"baseTokenProjectUrl\",\"baseTokenName\",\"baseTokenDecimals\",\"baseTokenAddress\",\"quoteToken\",\"quoteTokenDecimals\",\"quoteTokenAddress\",\"minOrderSize\",\"pricePrecision\",\"priceDecimals\",\"amountDecimals\",\"asMakerFeeRate\",\"asTakerFeeRate\",\"supportedOrderTypes\",\"marketOrderMaxSlippage\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,'TEST171831782-WETH','TEST171831782','https://ropsten.etherscan.io','My token',18,'0xdaf16fad57bc1d43a57695d1e724013171831491','WETH',18,'0x251bbfa0abf2dc356a44f7af5e4d7a224a4ec01f','1.01',5,8,2,'0.08223','0.05708',ARRAY['LIMIT']::\"enum_market_supportedOrderTypes\"[],'0.20000','2019-07-05 14:18:32.028 +00:00','2019-07-05 14:18:32.028 +00:00') RETURNING *;"},"original":{"name":"error","length":272,"severity":"ERROR","code":"23505","detail":"Key (\"baseTokenAddress\")=(0xdaf16fad57bc1d43a57695d1e724013171831491) already exists.","schema":"public","table":"market","constraint":"market_baseTokenAddress_key","file":"nbtinsert.c","line":"434","routine":"_bt_check_unique","sql":"INSERT INTO \"market\" (\"id\",\"tokens\",\"baseToken\",\"baseTokenProjectUrl\",\"baseTokenName\",\"baseTokenDecimals\",\"baseTokenAddress\",\"quoteToken\",\"quoteTokenDecimals\",\"quoteTokenAddress\",\"minOrderSize\",\"pricePrecision\",\"priceDecimals\",\"amountDecimals\",\"asMakerFeeRate\",\"asTakerFeeRate\",\"supportedOrderTypes\",\"marketOrderMaxSlippage\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,'TEST171831782-WETH','TEST171831782','https://ropsten.etherscan.io','My token',18,'0xdaf16fad57bc1d43a57695d1e724013171831491','WETH',18,'0x251bbfa0abf2dc356a44f7af5e4d7a224a4ec01f','1.01',5,8,2,'0.08223','0.05708',ARRAY['LIMIT']::\"enum_market_supportedOrderTypes\"[],'0.20000','2019-07-05 14:18:32.028 +00:00','2019-07-05 14:18:32.028 +00:00') RETURNING *;"},"sql":"INSERT INTO \"market\" (\"id\",\"tokens\",\"baseToken\",\"baseTokenProjectUrl\",\"baseTokenName\",\"baseTokenDecimals\",\"baseTokenAddress\",\"quoteToken\",\"quoteTokenDecimals\",\"quoteTokenAddress\",\"minOrderSize\",\"pricePrecision\",\"priceDecimals\",\"amountDecimals\",\"asMakerFeeRate\",\"asTakerFeeRate\",\"supportedOrderTypes\",\"marketOrderMaxSlippage\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,'TEST171831782-WETH','TEST171831782','https://ropsten.etherscan.io','My token',18,'0xdaf16fad57bc1d43a57695d1e724013171831491','WETH',18,'0x251bbfa0abf2dc356a44f7af5e4d7a224a4ec01f','1.01',5,8,2,'0.08223','0.05708',ARRAY['LIMIT']::\"enum_market_supportedOrderTypes\"[],'0.20000','2019-07-05 14:18:32.028 +00:00','2019-07-05 14:18:32.028 +00:00') RETURNING *;"}<br />
+                                [17:18:32.067245] ACTION: Status code: 500<br />
+                                [17:18:32.06734] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.admin.N_0037_UpdateTradeFeesWithZeroValuesTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  updateTradeFees
+      </td>
+  <td class="duration">
+    0.322s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:18:29.262239] Test is started<br />
+                                [17:18:29.579926] ACTION: Response body is {"message":"Fees should be positive and not zero"}<br />
+                                [17:18:29.580038] ACTION: Status code: 400<br />
+                                [17:18:29.583937] ACTION: Error message  from Response is 'Fees should be positive and not zero'<br />
+                                [17:18:29.584094] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.admin.N_0038_UpdateTradeFeesWithNegativeValuesTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  updateTradeFees
+      </td>
+  <td class="duration">
+    0.302s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:18:32.720157] Test is started<br />
+                                [17:18:33.007551] ACTION: Response body is {"message":"Fees should be positive and not zero"}<br />
+                                [17:18:33.007877] ACTION: Status code: 400<br />
+                                [17:18:33.022282] ACTION: Error message  from Response is 'Fees should be positive and not zero'<br />
+                                [17:18:33.022941] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.admin.N_0039_UpdateTradeFeesWithValuesMoreTenTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  updateTradeFees
+      </td>
+  <td class="duration">
+    0.329s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:18:31.161564] Test is started<br />
+                                [17:18:31.474377] ACTION: Response body is {"message":"Maker fee can be from 0.001 to 10"}<br />
+                                [17:18:31.474836] ACTION: Status code: 400<br />
+                                [17:18:31.489899] ACTION: Error message  from Response is 'Maker fee can be from 0.001 to 10'<br />
+                                [17:18:31.490261] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.admin.N_0050_AddNewTokenByNotAdminTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  addNewToken
+      </td>
+  <td class="duration">
+    0.283s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [17:18:28.632043] Test is started<br />
+                                [17:18:28.909857] ACTION: Response body is {"error":"Only user with role Admin has access"}<br />
+                                [17:18:28.910086] ACTION: Status code: 403<br />
+                                [17:18:28.914278] ACTION: 'Error message' parameter received from Response is 'Only user with role Admin has access'<br />
+                                [17:18:28.914488] Test is finished<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

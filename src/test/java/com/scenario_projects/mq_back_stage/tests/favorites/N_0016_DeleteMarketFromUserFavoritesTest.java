@@ -7,7 +7,6 @@ import com.scenario_projects.mq_back_stage.dataProvider.MarketId;
 import com.scenario_projects.mq_back_stage.dataProvider.Token;
 import com.scenario_projects.mq_back_stage.endpoints.DashboardAndFavoritesEndpoints;
 import com.scenario_projects.mq_back_stage.logging.CustomReporter;
-import com.scenario_projects.mq_back_stage.logging.TestListener;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -15,12 +14,10 @@ import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import static com.scenario_projects.mq_back_stage.endpoints.DashboardAndFavoritesEndpoints.getUserFavoritesMarkets;
 
-@Listeners(TestListener.class)
 public class N_0016_DeleteMarketFromUserFavoritesTest {
 
     @BeforeMethod

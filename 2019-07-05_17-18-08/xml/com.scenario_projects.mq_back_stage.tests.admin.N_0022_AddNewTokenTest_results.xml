@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Admin panel"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.352">
+  <properties />
+  
+  
+            <testcase name="addNewToken" time="0.352" classname="com.scenario_projects.mq_back_stage.tests.admin.N_0022_AddNewTokenTest" />
+      
+</testsuite>

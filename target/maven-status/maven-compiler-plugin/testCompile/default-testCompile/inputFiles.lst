@@ -1,3 +1,4 @@
+/home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/actioHelpers/GenerateRandomDigits.java
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/model/OrderBook.java
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/tests/exchange/N_0029_CreateExchangeOrderWrapToTokenTest.java
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/actioHelpers/RunJSFiles.java
@@ -18,6 +19,7 @@
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/tests/orderBook/N_0010_GetOrderBookHistoryForAllMarkets.java
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/tests/exchange/N_0044_CreateExchangeOrderWrapToTokenWithInvalidDataTest.java
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/actioHelpers/FindUserByPublicAddressHelper.java
+/home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/actioHelpers/DataConverter.java
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/tests/admin/N_0020_GetTradeFeesTest.java
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/tests/trade/N_0008_GetUserTradeHistory.java
 /home/ubuntu/Intellij Idea/com.scenario_projects.mq_back_stage/src/test/java/com/scenario_projects/mq_back_stage/tests/data/N_0006_GetRelayer.java

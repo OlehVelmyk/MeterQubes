@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Dashboard"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.322">
+  <properties />
+  
+  
+            <testcase name="getChartDataForThePeriod" time="0.322" classname="com.scenario_projects.mq_back_stage.tests.dashboard.N_0013_GetChartDataForThePeriodTest" />
+      
+</testsuite>

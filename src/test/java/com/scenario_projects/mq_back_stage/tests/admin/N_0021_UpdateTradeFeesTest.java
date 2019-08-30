@@ -6,17 +6,14 @@ import com.scenario_projects.mq_back_stage.actioHelpers.ResponseBody;
 import com.scenario_projects.mq_back_stage.actioHelpers.UpdateTradeFeesHelper;
 import com.scenario_projects.mq_back_stage.dataProvider.Token;
 import com.scenario_projects.mq_back_stage.endpoints.AdminAndBotEndpoints;
-import com.scenario_projects.mq_back_stage.logging.TestListener;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-@Listeners(TestListener.class)
 public class N_0021_UpdateTradeFeesTest {
     private double asMakerFeeRate = Double.parseDouble(GenerateRandomFeeRate.generateFeeRate());
     private double asTakerFeeRate = Double.parseDouble(GenerateRandomFeeRate.generateFeeRate());
@@ -41,7 +38,7 @@ public class N_0021_UpdateTradeFeesTest {
         Double asMakerFeeRateFromResponse = getParameters.getTradeFeesResponse(jsonPathEvaluator, "asMakerFeeRate");
         Double asTakerFeeRateFromResponse = getParameters.getTradeFeesResponse(jsonPathEvaluator, "asTakerFeeRate");
 
-        Assert.assertEquals(asMakerFeeRateFromResponse, asMakerFeeRate);
-        Assert.assertEquals(asTakerFeeRateFromResponse, asTakerFeeRate);
+        Assert.assertEquals(java.util.Optional.of(asMakerFeeRateFromResponse), asMakerFeeRate);
+        Assert.assertEquals(java.util.Optional.of(asTakerFeeRateFromResponse), asTakerFeeRate);
     }
 }

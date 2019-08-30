@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Users</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Users</h1>
+<p>
+  Test duration: 5.133s
+</p>
+
+
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.users.N_0001_FindUserByPublicAddressTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  findUserByPublicAddress
+      </td>
+  <td class="duration">
+    0.317s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [15:20:04.90559] I am in onTestStart method findUserByPublicAddress start<br />
+                                [15:20:05.206871] ACTION: Response body is {"id":4,"nonce":"xdBubLRy6eisupu1AGDa9QyKny_bZ0eywSNpfGQrW5LYRhmlNDpTQrFL2aHAZtYsWDQi49_RiXPCkt4GrYiypQ","isAdmin":false}<br />
+                                [15:20:05.207051] ACTION: Status code: 200<br />
+                                [15:20:05.216681] ACTION: Nonce received from Response is 'xdBubLRy6eisupu1AGDa9QyKny_bZ0eywSNpfGQrW5LYRhmlNDpTQrFL2aHAZtYsWDQi49_RiXPCkt4GrYiypQ'<br />
+                                [15:20:05.222426] ACTION: User Id from Response is '4'<br />
+                                [15:20:05.223017] I am in onTestSuccess method findUserByPublicAddress succeed<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.users.N_0002_Authorization</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  authorizationSuccessful
+      </td>
+  <td class="duration">
+    0.493s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [15:20:06.993494] I am in onTestStart method authorizationSuccessful start<br />
+                                [15:20:07.484289] ACTION: Response body is eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7ImlkIjo0LCJwdWJsaWNBZGRyZXNzIjoiMHg0RUM3ZTc1MzBlMjQ3YWEzMzQzQWE3QmMxN2UxNjc3OUE1NzU4ZTVjIn0sImlhdCI6MTU2NzE2NzYwN30.xMGF-3_shaWDGZJY3gPHAiTk-vVEWYqRxrCsoBG_I4M<br />
+                                [15:20:07.484821] ACTION: Status code: 200<br />
+                                [15:20:07.486394] I am in onTestSuccess method authorizationSuccessful succeed<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.users.N_0003_FindUserByUserIdTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  findUserByUserId
+      </td>
+  <td class="duration">
+    0.323s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [15:20:04.583012] I am in onTestStart method findUserByUserId start<br />
+                                [15:20:04.889992] ACTION: Response body is {"id":4,"nonce":"xdBubLRy6eisupu1AGDa9QyKny_bZ0eywSNpfGQrW5LYRhmlNDpTQrFL2aHAZtYsWDQi49_RiXPCkt4GrYiypQ","role":"CLIENT"}<br />
+                                [15:20:04.890233] ACTION: Status code: 200<br />
+                                [15:20:04.8963] ACTION: User Id from Response is '4'<br />
+                                [15:20:04.903235] ACTION: Role  from Response is 'CLIENT'<br />
+                                [15:20:04.904119] I am in onTestSuccess method findUserByUserId succeed<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.scenario_projects.mq_back_stage.tests.users.N_0036_AuthorizationFailed</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  authorizationAgain
+      </td>
+  <td class="duration">
+    0.588s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [15:20:06.034196] I am in onTestStart method authorizationAgain start<br />
+                                [15:20:06.613983] ACTION: Response body is {"message":"Can't create token: UnauthorizedError: Signature verification failed"}<br />
+                                [15:20:06.614311] ACTION: Status code: 500<br />
+                                [15:20:06.622292] ACTION: 'Error message' parameter received from Response is 'Can't create token: UnauthorizedError: Signature verification failed'<br />
+                                [15:20:06.622717] I am in onTestSuccess method authorizationAgain succeed<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

@@ -4,15 +4,12 @@ import com.scenario_projects.mq_back_stage.actioHelpers.RunJSFiles;
 import com.scenario_projects.mq_back_stage.dataProvider.TransactionHash;
 import com.scenario_projects.mq_back_stage.endpoints.OrdersEndpoints;
 import com.scenario_projects.mq_back_stage.logging.CustomReporter;
-import com.scenario_projects.mq_back_stage.logging.TestListener;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-@Listeners(TestListener.class)
 public class N_0026_CreateOrderTest {
 
     @Test

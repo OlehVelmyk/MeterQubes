@@ -4,15 +4,12 @@ import com.scenario_projects.mq_back_stage.actioHelpers.GetParametersFromRespons
 import com.scenario_projects.mq_back_stage.actioHelpers.ResponseBody;
 import com.scenario_projects.mq_back_stage.dataProvider.MarketId;
 import com.scenario_projects.mq_back_stage.endpoints.DashboardAndFavoritesEndpoints;
-import com.scenario_projects.mq_back_stage.logging.TestListener;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-@Listeners(TestListener.class)
 public class N_0013_GetChartDataForThePeriodTest {
 
     @Test
